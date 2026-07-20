@@ -1,0 +1,2 @@
+﻿export const FEATURED_PROJECTS_LIMIT = 3;
+export const RELATED_PROJECTS_LIMIT = 3;

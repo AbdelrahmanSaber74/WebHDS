@@ -1,0 +1,12 @@
+﻿export { AboutCtaSection } from "./AboutCtaSection";
+export { AboutHeroSection } from "./AboutHeroSection";
+export { AboutProcessSection } from "./AboutProcessSection";
+export { AboutStatisticsSection } from "./AboutStatisticsSection";
+export { AboutTechnologiesSection } from "./AboutTechnologiesSection";
+export { AboutTimelineSection } from "./AboutTimelineSection";
+export { CompanyStorySection } from "./CompanyStorySection";
+export { CoreValuesSection } from "./CoreValuesSection";
+export { IndustriesSection } from "./IndustriesSection";
+export { MissionVisionSection } from "./MissionVisionSection";
+export { TeamAndCertificationsSection } from "./TeamAndCertificationsSection";
+export { WhyChooseHdsSection } from "./WhyChooseHdsSection";

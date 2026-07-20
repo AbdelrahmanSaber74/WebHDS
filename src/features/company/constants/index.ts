@@ -1,0 +1,7 @@
+export {
+  COMPANY_FOUNDED_YEAR,
+  COMPANY_LEGAL_NAME,
+  COMPANY_LOGO_PATH,
+  COMPANY_NAME,
+  COMPANY_SCHEMA_ID,
+} from "./company.constants";

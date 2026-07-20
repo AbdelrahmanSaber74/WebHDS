@@ -1,0 +1,1 @@
+export { useHomeContent } from "./useHomeContent";
