@@ -1,4 +1,4 @@
-﻿import { SimpleGrid, Stack } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import { SectionContainer } from "@/shared/layouts";
 import { ContactForm, ContactSectionHeader } from "@/features/contact/components";
 import type { ContactRepository } from "@/features/contact/repository";
@@ -12,12 +12,10 @@ export type ContactFormSectionProps = {
 export function ContactFormSection({ data, repository }: ContactFormSectionProps) {
   return (
     <SectionContainer bg="bg.subtle">
-      <SimpleGrid alignItems="start" columns={{ base: 1, lg: 2 }} gap="10">
-        <Stack gap="6" position={{ lg: "sticky" }} top={{ lg: "28" }}>
-          <ContactSectionHeader header={data} />
-        </Stack>
+      <Stack gap="10" align="stretch" maxW="3xl" mx="auto">
+        <ContactSectionHeader align="center" header={data} />
         <ContactForm content={data} repository={repository} />
-      </SimpleGrid>
+      </Stack>
     </SectionContainer>
   );
 }

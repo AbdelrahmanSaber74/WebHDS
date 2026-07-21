@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+      <rect width="800" height="500" fill="#0b0f19"/>
+      <!-- Header -->
+      <rect x="30" y="30" width="740" height="50" rx="8" fill="#131a2b"/>
+      <circle cx="60" cy="55" r="8" fill="#ff5f56"/>
+      <circle cx="85" cy="55" r="8" fill="#ffbd2e"/>
+      <circle cx="110" cy="55" r="8" fill="#27c93f"/>
+      <text x="140" y="61" fill="#718096" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">MarketLane Global Merchant Suite</text>
+      <!-- Left Side -->
+      <rect x="30" y="100" width="360" height="370" rx="8" fill="#131a2b"/>
+      <text x="55" y="145" fill="#718096" font-family="system-ui" font-size="14" font-weight="bold">Best Sellers</text>
+      <rect x="55" y="180" width="310" height="70" rx="8" fill="#1b253c"/>
+      <rect x="75" y="195" width="40" height="40" rx="4" fill="#a0f000" opacity="0.3"/>
+      <rect x="130" y="195" width="150" height="15" rx="3" fill="#a0aed0"/>
+      <rect x="130" y="215" width="80" height="12" rx="3" fill="#718096"/>
+      <text x="310" y="222" fill="#a0f000" font-family="system-ui" font-size="16" font-weight="bold">$49.00</text>
+
+      <rect x="55" y="270" width="310" height="70" rx="8" fill="#1b253c"/>
+      <rect x="75" y="285" width="40" height="40" rx="4" fill="#a0f000" opacity="0.3"/>
+      <rect x="130" y="285" width="150" height="15" rx="3" fill="#a0aed0"/>
+      <rect x="130" y="305" width="80" height="12" rx="3" fill="#718096"/>
+      <text x="310" y="312" fill="#a0f000" font-family="system-ui" font-size="16" font-weight="bold">$89.00</text>
+
+      <rect x="55" y="360" width="310" height="70" rx="8" fill="#1b253c"/>
+      <rect x="75" y="375" width="40" height="40" rx="4" fill="#a0f000" opacity="0.3"/>
+      <rect x="130" y="375" width="150" height="15" rx="3" fill="#a0aed0"/>
+      <rect x="130" y="395" width="80" height="12" rx="3" fill="#718096"/>
+      <text x="310" y="402" fill="#a0f000" font-family="system-ui" font-size="16" font-weight="bold">$129.00</text>
+
+      <!-- Right Side -->
+      <rect x="410" y="100" width="360" height="370" rx="8" fill="#131a2b"/>
+      <text x="435" y="145" fill="#718096" font-family="system-ui" font-size="14" font-weight="bold">Conversion Rate (LTM)</text>
+      <!-- Circular Graph -->
+      <circle cx="615" cy="270" r="80" fill="none" stroke="#1b253c" stroke-width="20"/>
+      <circle cx="615" cy="270" r="80" fill="none" stroke="url(#marketlaneGrad)" stroke-width="20" stroke-dasharray="502" stroke-dashoffset="150" stroke-linecap="round" transform="rotate(-90 615 270)"/>
+      <text x="615" y="278" fill="#ffffff" font-family="system-ui" font-size="28" font-weight="bold" text-anchor="middle">29%</text>
+      <text x="435" y="400" fill="#a0f000" font-family="system-ui" font-size="32" font-weight="bold">+242%</text>
+      <text x="435" y="430" fill="#718096" font-family="system-ui" font-size="14">Sales Volume Increase</text>
+
+      <defs>
+        <linearGradient id="marketlaneGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#a0f000" />
+          <stop offset="100%" stop-color="#00f2fe" />
+        </linearGradient>
+      </defs>
+    </svg>

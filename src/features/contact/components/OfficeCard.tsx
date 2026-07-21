@@ -1,4 +1,4 @@
-﻿import { Box, Heading, Stack, Text, chakra } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text, chakra } from "@chakra-ui/react";
 import { MapPin } from "lucide-react";
 import { Card } from "@/shared/ui";
 import { useI18n } from "@/shared/i18n";
@@ -38,11 +38,21 @@ export function OfficeCard({ office }: OfficeCardProps) {
             {t(office.workingHours)}
           </Text>
         </Stack>
-        <Stack gap="1" fontWeight="semibold">
-          <chakra.a color="brand.solid" href={`mailto:${office.email}`}>
+        <Stack gap="1" fontWeight="semibold" align="start">
+          <chakra.a
+            color="brand.solid"
+            href={`mailto:${office.email}`}
+            dir="ltr"
+            display="inline-block"
+          >
             {office.email}
           </chakra.a>
-          <chakra.a color="brand.solid" href={`tel:${office.phone.replace(/\s/g, "")}`}>
+          <chakra.a
+            color="brand.solid"
+            href={`tel:${office.phone.replace(/\s/g, "")}`}
+            dir="ltr"
+            display="inline-block"
+          >
             {office.phone}
           </chakra.a>
         </Stack>

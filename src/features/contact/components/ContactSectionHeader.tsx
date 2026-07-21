@@ -1,4 +1,4 @@
-﻿import { Heading, Stack, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text } from "@chakra-ui/react";
 import { Badge } from "@/shared/ui";
 import { useI18n } from "@/shared/i18n";
 import type { SectionContent } from "@/shared/types";
@@ -8,7 +8,7 @@ export type ContactSectionHeaderProps = {
   header: SectionContent;
 };
 
-export function ContactSectionHeader({ align = "start", header }: ContactSectionHeaderProps) {
+export function ContactSectionHeader({ align = "center", header }: ContactSectionHeaderProps) {
   const { t } = useI18n();
 
   return (

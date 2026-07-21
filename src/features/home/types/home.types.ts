@@ -1,4 +1,4 @@
-﻿import type { LucideIcon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export type TranslationKey = string;
 
@@ -10,14 +10,30 @@ export type HomeHero = {
   primaryCtaHref: string;
   secondaryCtaKey: TranslationKey;
   secondaryCtaHref: string;
-
   image: string;
-
   imageAltKey: TranslationKey;
 };
 
+export type HomeAboutHighlight = {
+  id: string;
+  titleKey: TranslationKey;
+  descriptionKey: TranslationKey;
+  icon: LucideIcon;
+};
+
+export type HomeAbout = {
+  header: HomeSectionHeader;
+  bodyKey: TranslationKey;
+  highlights: HomeAboutHighlight[];
+  ctaKey: TranslationKey;
+  ctaHref: string;
+};
+
 export type HomeClient = {
-  name: string;
+  id: string;
+  labelKey: TranslationKey;
+  accent: string;
+  logoUrl?: string;
 };
 
 export type HomeFeatureCard = {
@@ -49,6 +65,7 @@ export type HomeTestimonial = {
   quoteKey: TranslationKey;
   nameKey: TranslationKey;
   roleKey: TranslationKey;
+  companyKey: TranslationKey;
 };
 
 export type HomeFaq = {
@@ -74,6 +91,7 @@ export type HomeSectionHeader = {
 
 export type HomeContent = {
   hero: HomeHero;
+  about: HomeAbout;
   clients: {
     header: HomeSectionHeader;
     items: HomeClient[];

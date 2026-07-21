@@ -1,4 +1,4 @@
-﻿import { Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { SectionContainer } from "@/shared/layouts";
 import { Card } from "@/shared/ui";
 import { useI18n } from "@/shared/i18n";
@@ -21,7 +21,7 @@ export function TeamAndCertificationsSection({
 
   return (
     <SectionContainer bg="bg.subtle">
-      <SimpleGrid columns={{ base: 1, lg: 2 }} gap="6">
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap="6">
         <Card h="full" variant="glass">
           <Stack gap="5">
             <AboutSectionHeader header={team.header} />

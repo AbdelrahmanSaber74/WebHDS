@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+      <rect width="800" height="500" fill="#0d1117"/>
+      <!-- Header -->
+      <rect x="30" y="30" width="740" height="50" rx="8" fill="#161b22"/>
+      <circle cx="60" cy="55" r="8" fill="#ff5f56"/>
+      <circle cx="85" cy="55" r="8" fill="#ffbd2e"/>
+      <circle cx="110" cy="55" r="8" fill="#27c93f"/>
+      <text x="140" y="61" fill="#8b949e" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">CareFlow Clinical Command Center</text>
+      <!-- Sidebar -->
+      <rect x="30" y="100" width="180" height="370" rx="8" fill="#161b22"/>
+      <rect x="50" y="130" width="140" height="25" rx="4" fill="#00f2fe" opacity="0.15"/>
+      <rect x="50" y="175" width="140" height="15" rx="3" fill="#30363d"/>
+      <rect x="50" y="210" width="140" height="15" rx="3" fill="#30363d"/>
+      <rect x="50" y="245" width="140" height="15" rx="3" fill="#30363d"/>
+      <!-- Grid -->
+      <!-- Card 1 -->
+      <rect x="230" y="100" width="260" height="170" rx="8" fill="#161b22"/>
+      <text x="255" y="135" fill="#8b949e" font-family="system-ui" font-size="12" font-weight="bold" letter-spacing="1">PATIENTS IN SERVICE</text>
+      <text x="255" y="195" fill="#00f2fe" font-family="system-ui" font-size="48" font-weight="bold">142</text>
+      <path d="M 255 240 L 465 240" stroke="#30363d" stroke-width="2"/>
+      <text x="255" y="258" fill="#58a6ff" font-family="system-ui" font-size="12">↑ 12% vs last hour</text>
+      <!-- Card 2 -->
+      <rect x="510" y="100" width="260" height="170" rx="8" fill="#161b22"/>
+      <text x="535" y="135" fill="#8b949e" font-family="system-ui" font-size="12" font-weight="bold" letter-spacing="1">AVG RESPONSE TIME</text>
+      <text x="535" y="195" fill="#4facfe" font-family="system-ui" font-size="48" font-weight="bold">3.8m</text>
+      <path d="M 535 240 L 745 240" stroke="#30363d" stroke-width="2"/>
+      <text x="535" y="258" fill="#58a6ff" font-family="system-ui" font-size="12">↓ 38% optimization</text>
+      <!-- Waveform Graph -->
+      <rect x="230" y="290" width="540" height="180" rx="8" fill="#161b22"/>
+      <text x="255" y="325" fill="#8b949e" font-family="system-ui" font-size="14" font-weight="bold">Real-time Patient Flow Waveform</text>
+      <path d="M 255 420 Q 320 330 380 400 T 500 350 T 620 430 T 715 370" fill="none" stroke="url(#cyanTealGrad)" stroke-width="4" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="cyanTealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#00f2fe" />
+          <stop offset="100%" stop-color="#4facfe" />
+        </linearGradient>
+      </defs>
+    </svg>

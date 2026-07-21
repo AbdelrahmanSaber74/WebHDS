@@ -18,7 +18,7 @@ export function CoreValuesSection({ header, values }: CoreValuesSectionProps) {
     <SectionContainer>
       <Stack gap="8">
         <AboutSectionHeader align="center" header={header} />
-        <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
           {values.map((value) => (
             <Card key={value.id} h="full">
               <Stack gap="3">

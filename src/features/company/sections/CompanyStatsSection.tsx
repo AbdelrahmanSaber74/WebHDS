@@ -13,7 +13,7 @@ export function CompanyStatsSection({ statistics }: CompanyStatsSectionProps) {
 
   return (
     <SectionContainer bg="bg.subtle">
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap="5">
+      <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} gap="5">
         {statistics.map((statistic) => (
           <Card key={statistic.id} h="full">
             <Stack gap="2">

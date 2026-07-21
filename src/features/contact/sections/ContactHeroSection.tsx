@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { routesConfig } from "@/config";
 import { useI18n } from "@/shared/i18n";
 import { Container } from "@/shared/layouts";
@@ -17,6 +17,8 @@ export function ContactHeroSection({ data }: ContactHeroSectionProps) {
       <PageHero
         breadcrumbLabel={t("contact.breadcrumb.label")}
         content={{
+          backgroundImage: "/hero.png",
+          backgroundImageAlt: data.badge ? t(data.badge) : undefined,
           badge: data.badge ? t(data.badge) : undefined,
           breadcrumbs: [
             { href: routesConfig.home.path, label: t("contact.breadcrumb.home") },

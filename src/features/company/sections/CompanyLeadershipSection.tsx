@@ -21,7 +21,7 @@ export function CompanyLeadershipSection({ leadership }: CompanyLeadershipSectio
         <Heading as="h2" fontSize={{ base: "3xl", md: "5xl" }}>
           {t("company.leadership.title")}
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2 }} gap="5">
           {leadership.map((member) => (
             <Card key={member.id} h="full">
               <Stack gap="2">

@@ -18,7 +18,7 @@ export function MissionVisionSection({ company, header }: MissionVisionSectionPr
     <SectionContainer bg="bg.subtle">
       <Stack gap="8">
         <AboutSectionHeader align="center" header={header} />
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2 }} gap="5">
           <Card h="full">
             <Stack gap="3">
               <Heading as="h3" fontSize="2xl">

@@ -1,4 +1,4 @@
-﻿export const colorTokens = {
+export const colorTokens = {
   hds: {
     ink: { value: "#09111f" },
     cloud: { value: "#f7f9fc" },
@@ -27,7 +27,7 @@
 } as const;
 
 export const semanticColorTokens = {
-  "bg.canvas": { value: { base: "{colors.hds.cloud}", _dark: "{colors.hds.neutral900}" } },
+  "bg.canvas": { value: { base: "#f7f9fc", _dark: "#07111f" } },
   "bg.surface": { value: { base: "rgba(255, 255, 255, 0.9)", _dark: "rgba(11, 24, 42, 0.78)" } },
   "bg.glass": { value: { base: "rgba(255, 255, 255, 0.76)", _dark: "rgba(7, 17, 31, 0.76)" } },
   "bg.elevated": { value: { base: "#ffffff", _dark: "#0b182a" } },
@@ -45,17 +45,17 @@ export const semanticColorTokens = {
       _dark: "linear-gradient(145deg, rgba(13, 29, 48, 0.96), rgba(7, 17, 31, 0.82))",
     },
   },
-  "bg.subtle": { value: { base: "{colors.hds.neutral100}", _dark: "{colors.hds.neutral800}" } },
-  "fg.default": { value: { base: "{colors.hds.ink}", _dark: "#f7fbff" } },
-  "fg.muted": { value: { base: "{colors.hds.muted}", _dark: "#aab5c5" } },
+  "bg.subtle": { value: { base: "#edf2f7", _dark: "#172235" } },
+  "fg.default": { value: { base: "#09111f", _dark: "#f7fbff" } },
+  "fg.muted": { value: { base: "#5b677a", _dark: "#aab5c5" } },
   "border.subtle": {
     value: { base: "rgba(20, 32, 52, 0.12)", _dark: "rgba(255, 255, 255, 0.12)" },
   },
   "border.strong": {
     value: { base: "rgba(20, 32, 52, 0.18)", _dark: "rgba(255, 255, 255, 0.18)" },
   },
-  "brand.primary": { value: { base: "{colors.hds.teal}", _dark: "#20d5df" } },
-  "brand.primaryHover": { value: { base: "{colors.hds.tealDark}", _dark: "#5debf2" } },
-  "brand.accent": { value: { base: "{colors.hds.amber}", _dark: "#ffd27a" } },
+  "brand.primary": { value: { base: "#00a6b4", _dark: "#20d5df" } },
+  "brand.primaryHover": { value: { base: "#007782", _dark: "#5debf2" } },
+  "brand.accent": { value: { base: "#f4b759", _dark: "#ffd27a" } },
   "brand.soft": { value: { base: "rgba(0, 166, 180, 0.12)", _dark: "rgba(32, 213, 223, 0.14)" } },
 } as const;

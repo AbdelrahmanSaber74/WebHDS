@@ -8,7 +8,7 @@ export type AboutSectionHeaderProps = {
   header: AboutSectionHeaderContent;
 };
 
-export function AboutSectionHeader({ align = "start", header }: AboutSectionHeaderProps) {
+export function AboutSectionHeader({ align = "center", header }: AboutSectionHeaderProps) {
   const { t } = useI18n();
 
   return (

@@ -1,4 +1,4 @@
-﻿import { Box, Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { useMemo } from "react";
 import { usePortfolioProject } from "@/features/portfolio/hooks";
 import { buildProjectSchema } from "@/features/portfolio/utils";
@@ -88,7 +88,7 @@ export function PortfolioDetailsFeature({ slug }: PortfolioDetailsFeatureProps) 
       </SectionContainer>
 
       <SectionContainer>
-        <SimpleGrid columns={{ base: 1, md: 4 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} gap="5">
           <Card>
             <Text color="fg.muted">{t("portfolio.case.client")}</Text>
             <Heading as="h2" fontSize="xl">
@@ -142,7 +142,7 @@ export function PortfolioDetailsFeature({ slug }: PortfolioDetailsFeatureProps) 
           <Heading as="h2" fontSize={{ base: "3xl", md: "5xl" }}>
             {t("portfolio.case.architecture")}
           </Heading>
-          <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
             {project.architectureHighlights.map((item, index) => (
               <Card key={`${item}-${index}`}>
                 <Text color="fg.muted">{t(item)}</Text>
@@ -157,7 +157,7 @@ export function PortfolioDetailsFeature({ slug }: PortfolioDetailsFeatureProps) 
           <Heading as="h2" fontSize={{ base: "3xl", md: "5xl" }}>
             {t("portfolio.case.process")}
           </Heading>
-          <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
             {project.implementation.map((item, index) => (
               <Card key={`${item}-${index}`}>
                 <Text color="brand.primary" fontWeight="bold">
@@ -177,7 +177,7 @@ export function PortfolioDetailsFeature({ slug }: PortfolioDetailsFeatureProps) 
           <Heading as="h2" fontSize={{ base: "3xl", md: "5xl" }}>
             {t("portfolio.case.results")}
           </Heading>
-          <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
             {project.metrics.map((metric) => (
               <Card key={metric.id} variant="glass">
                 <Heading as="p" color="brand.primary" fontSize="4xl">
@@ -187,7 +187,7 @@ export function PortfolioDetailsFeature({ slug }: PortfolioDetailsFeatureProps) 
               </Card>
             ))}
           </SimpleGrid>
-          <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
             {project.businessResults.map((item, index) => (
               <Card key={`${item}-${index}`}>
                 <Text color="fg.muted">{t(item)}</Text>
@@ -216,7 +216,7 @@ export function PortfolioDetailsFeature({ slug }: PortfolioDetailsFeatureProps) 
             <Heading as="h2" fontSize={{ base: "3xl", md: "5xl" }}>
               {t("portfolio.case.related")}
             </Heading>
-            <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+            <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
               {relatedProjects.map((relatedProject) => (
                 <ProjectCard key={relatedProject.id} project={relatedProject} />
               ))}

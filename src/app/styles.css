@@ -1,4 +1,28 @@
-﻿html {
+/* Light Mode Selection Highlight */
+html[data-theme="light"] ::selection,
+html:not(.dark) ::selection {
+  background-color: #b3d4fc !important;
+  color: #09111f !important;
+}
+html[data-theme="light"] ::-moz-selection,
+html:not(.dark) ::-moz-selection {
+  background-color: #b3d4fc !important;
+  color: #09111f !important;
+}
+
+/* Dark Mode Selection Highlight */
+html[data-theme="dark"] ::selection,
+html.dark ::selection {
+  background-color: #005f73 !important;
+  color: #ffffff !important;
+}
+html[data-theme="dark"] ::-moz-selection,
+html.dark ::-moz-selection {
+  background-color: #005f73 !important;
+  color: #ffffff !important;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -13,4 +37,93 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+@keyframes hds-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes hds-marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Light Mode Gradients */
+html[data-theme="light"] .hds-gradient-text,
+html:not(.dark) .hds-gradient-text {
+  background-image: linear-gradient(135deg, #09111f 60%, #00a6b4) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+html[data-theme="light"] .hds-gradient-brand,
+html:not(.dark) .hds-gradient-brand {
+  background-image: linear-gradient(135deg, #00a6b4, #f4b759) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Dark Mode Gradients */
+html[data-theme="dark"] .hds-gradient-text,
+html.dark .hds-gradient-text {
+  background-image: linear-gradient(135deg, #f7fbff 60%, #20d5df) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+html[data-theme="dark"] .hds-gradient-brand,
+html.dark .hds-gradient-brand {
+  background-image: linear-gradient(135deg, #20d5df, #ffd27a) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+@keyframes hds-pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(31, 157, 102, 0.6);
+  }
+  70% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 6px rgba(31, 157, 102, 0);
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(31, 157, 102, 0);
+  }
+}
+
+.hds-pulse-dot {
+  animation: hds-pulse 2s infinite;
+  display: inline-block;
+  border-radius: 50%;
 }

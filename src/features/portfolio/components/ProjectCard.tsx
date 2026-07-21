@@ -36,7 +36,7 @@ export function ProjectCard({ priority = false, project }: ProjectCardProps) {
         />
         <Box
           aria-hidden="true"
-          bg="linear-gradient(180deg, transparent, rgba(7, 17, 31, 0.34))"
+          bg="linear-gradient(180deg, transparent 22%, rgba(7, 17, 31, 0.58))"
           inset="0"
           opacity={project.featured ? "1" : "0"}
           position="absolute"
@@ -44,7 +44,7 @@ export function ProjectCard({ priority = false, project }: ProjectCardProps) {
           _groupHover={{ opacity: "1" }}
         />
       </Box>
-      <Stack gap="5" p={{ base: "5", md: "6" }}>
+      <Stack gap="5" p={{ base: "5", md: "6" }} position="relative">
         <HStack gap="2" wrap="wrap">
           <Badge>{t(project.industry)}</Badge>
           <Text color="fg.muted" fontSize="sm">
@@ -81,7 +81,12 @@ export function ProjectCard({ priority = false, project }: ProjectCardProps) {
             </Box>
           ))}
         </HStack>
-        <Link color="brand.primary" fontWeight="semibold" href={`/portfolio/${project.slug}`}>
+        <Link
+          color="brand.primary"
+          fontWeight="semibold"
+          href={`/portfolio/${project.slug}`}
+          _hover={{ textDecoration: "none" }}
+        >
           <HStack as="span" gap="2">
             <Text as="span">{t("portfolio.card.readCaseStudy")}</Text>
             <ArrowRight aria-hidden="true" size={16} />

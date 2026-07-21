@@ -20,7 +20,7 @@ export function RelatedServicesSection({ services }: RelatedServicesSectionProps
           eyebrow="services.details.related.eyebrow"
           title="services.details.related.title"
         />
-        <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

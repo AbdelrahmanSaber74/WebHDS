@@ -1,4 +1,4 @@
-﻿import { Heading, Stack, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text } from "@chakra-ui/react";
 import { Badge } from "@/shared/ui";
 import { useI18n } from "@/shared/i18n";
 
@@ -10,7 +10,7 @@ export type PortfolioSectionHeaderProps = {
 };
 
 export function PortfolioSectionHeader({
-  align = "start",
+  align = "center",
   description,
   eyebrow,
   title,

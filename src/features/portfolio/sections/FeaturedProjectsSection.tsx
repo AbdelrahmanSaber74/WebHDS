@@ -1,4 +1,4 @@
-﻿import { SimpleGrid, Stack } from "@chakra-ui/react";
+import { SimpleGrid, Stack } from "@chakra-ui/react";
 import { SectionContainer } from "@/shared/layouts";
 import { PortfolioSectionHeader, ProjectCard } from "@/features/portfolio/components";
 import type { PortfolioListingContent, PortfolioProject } from "@/features/portfolio/types";
@@ -17,7 +17,7 @@ export function FeaturedProjectsSection({ data, projects }: FeaturedProjectsSect
           eyebrow={data.eyebrow}
           title={data.title}
         />
-        <SimpleGrid columns={{ base: 1, lg: 3 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} gap="5">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} priority={index === 0} project={project} />
           ))}

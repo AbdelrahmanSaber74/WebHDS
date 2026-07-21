@@ -1,4 +1,4 @@
-import type { HomeContent } from "@/features/home/types";
+﻿import type { HomeContent } from "@/features/home/types";
 
 export const homeProcessData: HomeContent["process"] = {
   header: {
@@ -6,9 +6,11 @@ export const homeProcessData: HomeContent["process"] = {
     titleKey: "home.process.title",
     descriptionKey: "home.process.description",
   },
-  items: ["discover", "architect", "design", "build", "launch", "optimize"].map((id) => ({
-    id,
-    titleKey: `home.process.${id}.title`,
-    descriptionKey: `home.process.${id}.description`,
-  })),
+  items: ["discovery", "planning", "design", "development", "testing", "deployment", "support"].map(
+    (id) => ({
+      id,
+      titleKey: `home.process.${id}.title`,
+      descriptionKey: `home.process.${id}.description`,
+    }),
+  ),
 };

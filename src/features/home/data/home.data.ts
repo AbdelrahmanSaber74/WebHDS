@@ -1,3 +1,4 @@
+﻿import { homeAboutData } from "./about.data";
 import { homeClientsData } from "./clients.data";
 import { homeCtaData } from "./cta.data";
 import { homeFaqData } from "./faq.data";
@@ -12,6 +13,7 @@ import type { HomeContent } from "@/features/home/types";
 
 export const homeData: HomeContent = {
   hero: homeHeroData,
+  about: homeAboutData,
   clients: homeClientsData,
   servicesPreview: homeServicesPreviewData,
   technologies: homeTechnologiesData,

@@ -1,4 +1,4 @@
-﻿import type {
+import type {
   CTAContent,
   FAQContent,
   HeroContent,
@@ -25,7 +25,7 @@ export type ContactRequest = {
   country: string;
   industry: string;
   service: string;
-  budget: string;
+  budget?: string;
   timeline: string;
   message: string;
   newsletterOptIn: boolean;
@@ -55,7 +55,7 @@ export type ContactFormContent = SectionContent & {
     country: string;
     industry: string;
     service: string;
-    budget: string;
+    budget?: string;
     timeline: string;
     message: string;
     newsletterOptIn: string;
@@ -68,7 +68,7 @@ export type ContactFormContent = SectionContent & {
     country: string;
     industry: string;
     service: string;
-    budget: string;
+    budget?: string;
     timeline: string;
     message: string;
   };
@@ -86,7 +86,7 @@ export type ContactFormContent = SectionContent & {
     countries: ContactOption[];
     industries: ContactOption[];
     services: ContactOption[];
-    budgets: ContactOption[];
+    budgets?: ContactOption[];
     timelines: ContactOption[];
   };
 };

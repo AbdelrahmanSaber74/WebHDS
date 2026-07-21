@@ -1,4 +1,4 @@
-﻿import { chakra, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { chakra, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { Send } from "lucide-react";
 import { Controller } from "react-hook-form";
 import { Button, Card, Input, Select, Textarea } from "@/shared/ui";
@@ -29,14 +29,14 @@ export function ContactForm({ content, repository }: ContactFormProps) {
   const countryOptions = mapOptions(content.options.countries, t);
   const industryOptions = mapOptions(content.options.industries, t);
   const serviceOptions = mapOptions(content.options.services, t);
-  const budgetOptions = mapOptions(content.options.budgets, t);
   const timelineOptions = mapOptions(content.options.timelines, t);
 
   return (
     <Card
       as="form"
       id="contact-form"
-      p={{ base: "5", md: "8" }}
+      p={{ base: "5", md: "8", lg: "10" }}
+      position="relative"
       variant="feature"
       onFocusCapture={markStarted}
       onSubmit={submit}
@@ -74,7 +74,7 @@ export function ContactForm({ content, repository }: ContactFormProps) {
           </Card>
         ) : null}
 
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap="5">
+        <SimpleGrid columns={{ base: 1, md: 2 }} gap={{ base: "4", md: "5" }}>
           <FormField
             error={errors.fullName?.message ? t(errors.fullName.message) : undefined}
             id="fullName"
@@ -202,29 +202,7 @@ export function ContactForm({ content, repository }: ContactFormProps) {
               </FormField>
             )}
           />
-          <Controller
-            control={control}
-            name="budget"
-            render={({ field }) => (
-              <FormField
-                error={errors.budget?.message ? t(errors.budget.message) : undefined}
-                id="budget"
-                label={t(content.fields.budget)}
-                required
-              >
-                <Select
-                  id="budget"
-                  options={budgetOptions}
-                  placeholder={t(content.placeholders.budget)}
-                  value={field.value}
-                  onBlur={field.onBlur}
-                  onChange={field.onChange}
-                  aria-describedby={errors.budget ? "budget-error" : undefined}
-                  aria-invalid={Boolean(errors.budget)}
-                />
-              </FormField>
-            )}
-          />
+
           <Controller
             control={control}
             name="timeline"

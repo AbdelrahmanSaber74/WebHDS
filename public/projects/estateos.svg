@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+      <rect width="800" height="500" fill="#130b08"/>
+      <!-- Header -->
+      <rect x="30" y="30" width="740" height="50" rx="8" fill="#24140f"/>
+      <circle cx="60" cy="55" r="8" fill="#ff5f56"/>
+      <circle cx="85" cy="55" r="8" fill="#ffbd2e"/>
+      <circle cx="110" cy="55" r="8" fill="#27c93f"/>
+      <text x="140" y="61" fill="#9c877f" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">EstateOS Premium Properties Portal</text>
+      
+      <!-- Portal dashboard layout -->
+      <rect x="30" y="100" width="460" height="370" rx="8" fill="#24140f"/>
+      <text x="55" y="145" fill="#ffffff" font-family="system-ui" font-size="18" font-weight="bold">Featured Property</text>
+      <rect x="55" y="175" width="410" height="190" rx="12" fill="url(#estateGrad)" opacity="0.95"/>
+      <rect x="75" y="300" width="220" height="45" rx="6" fill="#130b08" opacity="0.8"/>
+      <text x="90" y="327" fill="#f97316" font-family="system-ui" font-size="14" font-weight="bold">Al-Olaya Luxury Villas</text>
+      <text x="350" y="215" fill="#ffffff" font-family="system-ui" font-size="18" font-weight="bold">Riyadh, SA</text>
+
+      <rect x="55" y="390" width="410" height="55" rx="8" fill="#301b14"/>
+      <text x="80" y="423" fill="#9c877f" font-family="system-ui" font-size="14">Pipeline Inventory Accuracy</text>
+      <text x="390" y="425" fill="#f97316" font-family="system-ui" font-size="18" font-weight="bold">98%</text>
+
+      <!-- Right statistics -->
+      <rect x="510" y="100" width="260" height="370" rx="8" fill="#24140f"/>
+      <text x="535" y="145" fill="#9c877f" font-family="system-ui" font-size="12" font-weight="bold" letter-spacing="1">DEAL FLOW</text>
+      <text x="535" y="200" fill="#f97316" font-family="system-ui" font-size="48" font-weight="bold">$42M+</text>
+      <text x="535" y="225" fill="#9c877f" font-family="system-ui" font-size="12">Total Transactions Volume</text>
+      <path d="M 535 255 L 745 255" stroke="#301b14" stroke-width="2"/>
+      <text x="535" y="315" fill="#f97316" font-family="system-ui" font-size="48" font-weight="bold">26%</text>
+      <text x="535" y="340" fill="#9c877f" font-family="system-ui" font-size="12">Avg Lead Response Increase</text>
+
+      <defs>
+        <linearGradient id="estateGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#f97316" />
+          <stop offset="100%" stop-color="#ea580c" />
+        </linearGradient>
+      </defs>
+    </svg>

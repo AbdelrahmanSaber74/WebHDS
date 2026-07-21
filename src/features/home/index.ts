@@ -1,13 +1,12 @@
-export { useHomeContent } from "./hooks";
+﻿export { useHomeContent } from "./hooks";
 export {
+  AboutSection,
   ClientsSection,
   CtaSection,
   FaqSection,
   HeroSection,
   ProcessSection,
   ServicesPreviewSection,
-  StatisticsSection,
-  TechnologiesSection,
   TestimonialsSection,
   WhyChooseUsSection,
 } from "./sections";

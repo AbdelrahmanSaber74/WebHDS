@@ -1,5 +1,4 @@
-﻿import { BrainCircuit, Compass, Layers3, ShieldCheck } from "lucide-react";
-import { images } from "@/assets/images";
+import { BrainCircuit, Compass, Layers3, ShieldCheck } from "lucide-react";
 import type { AboutContent } from "@/features/about/types";
 
 export const aboutData: AboutContent = {
@@ -11,7 +10,7 @@ export const aboutData: AboutContent = {
     primaryHref: "mailto:sales@hds.example",
     secondaryLabel: "about.hero.secondary",
     secondaryHref: "/services",
-    image: images.hdsEnterpriseHero,
+    image: "/hero.png",
     imageAlt: "about.hero.imageAlt",
   },
   story: {

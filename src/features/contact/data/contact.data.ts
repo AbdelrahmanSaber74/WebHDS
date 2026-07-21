@@ -1,4 +1,4 @@
-﻿import { routesConfig } from "@/config";
+import { routesConfig } from "@/config";
 import type { ContactContent } from "@/features/contact/types";
 
 export const contactContent: ContactContent = {
@@ -129,10 +129,10 @@ export const contactContent: ContactContent = {
         { value: "not-sure", label: "contact.options.service.notSure" },
       ],
       budgets: [
-        { value: "under-25k", label: "contact.options.budget.under25k" },
-        { value: "25k-50k", label: "contact.options.budget.from25kTo50k" },
-        { value: "50k-100k", label: "contact.options.budget.from50kTo100k" },
-        { value: "over-100k", label: "contact.options.budget.over100k" },
+        { value: "under-5k", label: "contact.options.budget.under5k" },
+        { value: "5k-10k", label: "contact.options.budget.from5kTo10k" },
+        { value: "10k-25k", label: "contact.options.budget.from10kTo25k" },
+        { value: "over-25k", label: "contact.options.budget.over25k" },
         { value: "not-sure", label: "contact.options.budget.notSure" },
       ],
       timelines: [

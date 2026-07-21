@@ -1,4 +1,3 @@
-﻿import { images } from "@/assets/images";
 import type { PortfolioListingContent, PortfolioProject } from "@/features/portfolio/types";
 
 const sharedCta = {
@@ -17,7 +16,7 @@ export const portfolioListingData: PortfolioListingContent = {
     primaryHref: "mailto:sales@hds.example",
     secondaryLabel: "portfolio.hero.secondary",
     secondaryHref: "/services",
-    image: images.hdsEnterpriseHero,
+    image: "/hero.png",
     imageAlt: "portfolio.hero.imageAlt",
   },
   featured: {
@@ -60,9 +59,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"],
     teamSize: 7,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/careflow.png",
     featuredImageAlt: "portfolio.projects.careflow.imageAlt",
-    gallery: [images.hdsEnterpriseHero, images.hdsEnterpriseHero],
+    gallery: ["/projects/careflow.png"],
     challenge: "portfolio.projects.careflow.challenge",
     solution: "portfolio.projects.careflow.solution",
     implementation: [
@@ -121,9 +120,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["React", "TypeScript", "NestJS", "Redis", "Azure"],
     teamSize: 8,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/nova.png",
     featuredImageAlt: "portfolio.projects.nova.imageAlt",
-    gallery: [images.hdsEnterpriseHero],
+    gallery: ["/projects/nova.png"],
     challenge: "portfolio.projects.nova.challenge",
     solution: "portfolio.projects.nova.solution",
     implementation: [
@@ -182,9 +181,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["React", "GraphQL", "Node.js", "Stripe", "Cloudflare"],
     teamSize: 6,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/marketlane.png",
     featuredImageAlt: "portfolio.projects.marketlane.imageAlt",
-    gallery: [images.hdsEnterpriseHero],
+    gallery: ["/projects/marketlane.png"],
     challenge: "portfolio.projects.marketlane.challenge",
     solution: "portfolio.projects.marketlane.solution",
     implementation: [
@@ -243,9 +242,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["Vue-compatible APIs", "React", "Node.js", "PostGIS", "AWS"],
     teamSize: 9,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/fleetpulse.png",
     featuredImageAlt: "portfolio.projects.fleetpulse.imageAlt",
-    gallery: [images.hdsEnterpriseHero],
+    gallery: ["/projects/fleetpulse.png"],
     challenge: "portfolio.projects.fleetpulse.challenge",
     solution: "portfolio.projects.fleetpulse.solution",
     implementation: [
@@ -304,9 +303,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["React", "TypeScript", "Node.js", "Video APIs", "PostgreSQL"],
     teamSize: 6,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/learnsphere.png",
     featuredImageAlt: "portfolio.projects.learnsphere.imageAlt",
-    gallery: [images.hdsEnterpriseHero],
+    gallery: ["/projects/learnsphere.png"],
     challenge: "portfolio.projects.learnsphere.challenge",
     solution: "portfolio.projects.learnsphere.solution",
     implementation: [
@@ -365,9 +364,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["React", "Mapbox", "Node.js", "PostgreSQL", "HubSpot APIs"],
     teamSize: 5,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/estateos.png",
     featuredImageAlt: "portfolio.projects.estateos.imageAlt",
-    gallery: [images.hdsEnterpriseHero],
+    gallery: ["/projects/estateos.png"],
     challenge: "portfolio.projects.estateos.challenge",
     solution: "portfolio.projects.estateos.solution",
     implementation: [
@@ -426,9 +425,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["React", "Node.js", "MQTT", "TimescaleDB", "Docker"],
     teamSize: 10,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/factorygrid.png",
     featuredImageAlt: "portfolio.projects.factorygrid.imageAlt",
-    gallery: [images.hdsEnterpriseHero],
+    gallery: ["/projects/factorygrid.png"],
     challenge: "portfolio.projects.factorygrid.challenge",
     solution: "portfolio.projects.factorygrid.solution",
     implementation: [
@@ -487,9 +486,9 @@ export const portfolioProjectsData = [
     ],
     technologies: ["React Native", "TypeScript", "Firebase", "Node.js", "Maps APIs"],
     teamSize: 6,
-    featuredImage: images.hdsEnterpriseHero,
+    featuredImage: "/projects/quickbite.png",
     featuredImageAlt: "portfolio.projects.quickbite.imageAlt",
-    gallery: [images.hdsEnterpriseHero],
+    gallery: ["/projects/quickbite.png"],
     challenge: "portfolio.projects.quickbite.challenge",
     solution: "portfolio.projects.quickbite.solution",
     implementation: [

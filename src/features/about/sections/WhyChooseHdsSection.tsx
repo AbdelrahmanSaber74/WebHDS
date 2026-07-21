@@ -1,4 +1,4 @@
-﻿import { Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import { SectionContainer } from "@/shared/layouts";
 import { Card } from "@/shared/ui";
 import { useI18n } from "@/shared/i18n";
@@ -16,7 +16,7 @@ export function WhyChooseHdsSection({ data }: WhyChooseHdsSectionProps) {
     <SectionContainer bg="bg.subtle">
       <Stack gap="8">
         <AboutSectionHeader align="center" header={data.header} />
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 4 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2, xl: 4 }} gap="5">
           {data.items.map((item) => {
             const Icon = item.icon;
 

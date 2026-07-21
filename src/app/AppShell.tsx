@@ -1,5 +1,13 @@
-﻿import { HStack, Link, Stack, Text } from "@chakra-ui/react";
-import { ExternalLink } from "lucide-react";
+import { Link, Text } from "@chakra-ui/react";
+import {
+  Facebook,
+  Github,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Youtube,
+  Globe
+} from "lucide-react";
 import { Outlet, useLocation } from "react-router";
 import { footerContent, navigationContent } from "@/app/content";
 import type { Locale } from "@/config";
@@ -43,7 +51,7 @@ function buildFooterContactItems(
   t: (key: string) => string,
   contact: ReturnType<typeof useCompanyContact>,
 ): FooterContactItem[] {
-  return [contact.sales, contact.support, contact.careers].map((item) => ({
+  return [contact.support].map((item) => ({
     label: t(item.label),
     value: item.value,
     href: item.href ?? `mailto:${item.value}`,
@@ -59,7 +67,28 @@ function buildFooterOffices(
     label: `${t(office.city)}, ${t(office.country)}`,
     address: t(office.address),
     contactHref: `mailto:${office.email}`,
+    phone: office.phone,
+    email: office.email,
   }));
+}
+
+function getSocialIcon(id: string) {
+  switch (id.toLowerCase()) {
+    case "linkedin":
+      return <Linkedin aria-hidden="true" size={16} />;
+    case "github":
+      return <Github aria-hidden="true" size={16} />;
+    case "facebook":
+      return <Facebook aria-hidden="true" size={16} />;
+    case "instagram":
+      return <Instagram aria-hidden="true" size={16} />;
+    case "x":
+      return <Twitter aria-hidden="true" size={16} />;
+    case "youtube":
+      return <Youtube aria-hidden="true" size={16} />;
+    default:
+      return <Globe aria-hidden="true" size={16} />;
+  }
 }
 
 function buildFooterSocialLinks(
@@ -68,7 +97,7 @@ function buildFooterSocialLinks(
 ): FooterSocialLink[] {
   return socialLinks.map((link) => ({
     href: link.href,
-    icon: <ExternalLink aria-hidden="true" size={16} />,
+    icon: getSocialIcon(link.id),
     label: t(link.label),
   }));
 }
@@ -92,28 +121,20 @@ export function AppShell() {
   const header = (
     <Navbar
       brand={
-        <Link href={routesConfig.home.path} _hover={{ textDecoration: "none" }}>
-          <HStack gap="3">
-            <Stack
-              align="center"
-              bg="brand.primary"
-              color="white"
-              h="11"
-              justify="center"
-              rounded="panel"
-              w="11"
-            >
-              <Text fontWeight="bold">{company.name}</Text>
-            </Stack>
-            <Stack display={{ base: "none", sm: "flex" }} gap="0">
-              <Text color="fg.default" fontWeight="bold" lineHeight="snug">
-                {company.legalName}
-              </Text>
-              <Text color="fg.muted" fontSize="xs" lineHeight="snug">
-                {t(company.tagline)}
-              </Text>
-            </Stack>
-          </HStack>
+        <Link href={routesConfig.home.path} _hover={{ textDecoration: "none" }} display="flex" alignItems="center" gap="1.5">
+          <img
+            src="/logo.png"
+            alt={company.legalName}
+            style={{
+              height: "50px",
+              objectFit: "contain",
+              marginInlineStart: "-10px",
+              marginInlineEnd: "-8px",
+            }}
+          />
+          <Text color="fg.default" fontWeight="bold" fontSize="lg">
+            {company.name}
+          </Text>
         </Link>
       }
       closeLabel={t("navigation.close")}
@@ -146,14 +167,21 @@ export function AppShell() {
   const footer = (
     <Footer
       brand={
-        <Stack gap="1">
-          <Text fontSize="lg" fontWeight="bold">
-            {company.legalName}
+        <Link href={routesConfig.home.path} _hover={{ textDecoration: "none" }} display="inline-flex" alignItems="center" gap="1.5">
+          <img
+            src="/logo.png"
+            alt={company.legalName}
+            style={{
+              height: "40px",
+              objectFit: "contain",
+              marginInlineStart: "-8px",
+              marginInlineEnd: "-6px",
+            }}
+          />
+          <Text color="fg.default" fontWeight="bold" fontSize="md">
+            {company.name}
           </Text>
-          <Text color="fg.muted" fontSize="sm">
-            {t(company.tagline)}
-          </Text>
-        </Stack>
+        </Link>
       }
       columns={buildFooterColumns(t, services)}
       contactItems={buildFooterContactItems(t, contact)}
@@ -171,6 +199,7 @@ export function AppShell() {
         title: t(footerContent.newsletter.title),
       }}
       offices={buildFooterOffices(t, offices)}
+      officesTitle={t("company.footer.offices")}
       socialLinks={buildFooterSocialLinks(t, socialLinks)}
       trustItems={company.certifications.map((certification) => t(certification))}
     />

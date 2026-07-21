@@ -1,4 +1,4 @@
-﻿import { Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import type { BoxProps } from "@chakra-ui/react";
 import { Container } from "../Container";
 import type { ContainerSize } from "../Container";
@@ -17,8 +17,10 @@ export function Section({
   ...props
 }: SectionProps) {
   return (
-    <Box as="section" py={spacing === "default" ? "sectionY" : "sectionYCompact"} {...props}>
-      <Container size={containerSize}>{children}</Container>
+    <Box as="section" py={spacing === "default" ? "sectionY" : "sectionYCompact"} position="relative" {...props}>
+      <Container size={containerSize} position="relative" zIndex="2">
+        {children}
+      </Container>
     </Box>
   );
 }

@@ -18,7 +18,7 @@ export function AboutTimelineSection({ header, timeline }: AboutTimelineSectionP
     <SectionContainer bg="bg.subtle">
       <Stack gap="8">
         <AboutSectionHeader header={header} />
-        <SimpleGrid columns={{ base: 1, md: 3 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} gap="5">
           {timeline.map((item) => (
             <Card key={item.id} h="full" variant="glass">
               <Stack gap="3">

@@ -1,4 +1,4 @@
-﻿import { Box, Button, Collapsible, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Collapsible, Stack, Text } from "@chakra-ui/react";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -21,7 +21,16 @@ export function Accordion({ items }: AccordionProps) {
         const isOpen = item.id === openId;
 
         return (
-          <Box key={item.id} border="1px solid" borderColor="border.subtle" rounded="card">
+          <Box
+            key={item.id}
+            bg="bg.surface"
+            border="1px solid"
+            borderColor={isOpen ? "brand.primary" : "border.subtle"}
+            boxShadow={isOpen ? "sm" : "none"}
+            rounded="card"
+            transition="all 0.3s cubic-bezier(0.16, 1, 0.3, 1)"
+            overflow="hidden"
+          >
             <Collapsible.Root open={isOpen}>
               <Collapsible.Trigger asChild>
                 <Button
@@ -29,16 +38,34 @@ export function Accordion({ items }: AccordionProps) {
                   justifyContent="space-between"
                   variant="ghost"
                   w="full"
+                  h="auto"
+                  py="4.5"
+                  px="5"
+                  color="fg.default"
+                  fontWeight="semibold"
+                  fontSize="md"
+                  textAlign="start"
                   onClick={() => setOpenId(isOpen ? null : item.id)}
+                  _hover={{ bg: "transparent", color: "brand.primary" }}
+                  _active={{ bg: "transparent" }}
                 >
-                  {item.title}
-                  <ChevronDown aria-hidden="true" size={18} />
+                  <Text as="span" pr="4">{item.title}</Text>
+                  <Box
+                    as="span"
+                    transform={isOpen ? "rotate(180deg)" : "rotate(0deg)"}
+                    transition="transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)"
+                    display="inline-flex"
+                  >
+                    <ChevronDown aria-hidden="true" size={18} />
+                  </Box>
                 </Button>
               </Collapsible.Trigger>
               <Collapsible.Content>
-                <Text color="fg.muted" px="4" pb="4">
-                  {item.content}
-                </Text>
+                <Box px="5" pb="5" pt="1">
+                  <Text color="fg.muted" fontSize="sm" lineHeight="relaxed">
+                    {item.content}
+                  </Text>
+                </Box>
               </Collapsible.Content>
             </Collapsible.Root>
           </Box>

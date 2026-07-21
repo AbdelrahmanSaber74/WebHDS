@@ -1,7 +1,7 @@
-﻿export const spacingTokens = {
+export const spacingTokens = {
   spacing: {
-    sectionY: { value: "clamp(3.5rem, 7vw, 6.5rem)" },
-    sectionYCompact: { value: "clamp(2.5rem, 5vw, 4.5rem)" },
+    sectionY: { value: "clamp(2.5rem, 5vw, 4.5rem)" },
+    sectionYCompact: { value: "clamp(1.5rem, 3.5vw, 3rem)" },
     containerX: { value: "clamp(1rem, 4vw, 2rem)" },
   },
   sizes: {

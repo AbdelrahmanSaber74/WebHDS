@@ -1,10 +1,9 @@
+﻿export { AboutSection } from "./AboutSection";
 export { ClientsSection } from "./ClientsSection";
 export { CtaSection } from "./CtaSection";
 export { FaqSection } from "./FaqSection";
 export { HeroSection } from "./HeroSection";
 export { ProcessSection } from "./ProcessSection";
 export { ServicesPreviewSection } from "./ServicesPreviewSection";
-export { StatisticsSection } from "./StatisticsSection";
-export { TechnologiesSection } from "./TechnologiesSection";
 export { TestimonialsSection } from "./TestimonialsSection";
 export { WhyChooseUsSection } from "./WhyChooseUsSection";

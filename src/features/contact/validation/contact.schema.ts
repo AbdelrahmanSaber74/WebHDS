@@ -1,4 +1,4 @@
-﻿import { z } from "zod";
+import { z } from "zod";
 import {
   CONTACT_COMPANY_MAX_LENGTH,
   CONTACT_MESSAGE_MAX_LENGTH,
@@ -25,7 +25,6 @@ export const contactFormSchema = z.object({
   country: requiredString,
   industry: requiredString,
   service: requiredString,
-  budget: requiredString,
   timeline: requiredString,
   message: requiredString.max(CONTACT_MESSAGE_MAX_LENGTH, "contact.form.errors.maxMessage"),
   newsletterOptIn: z.boolean(),
@@ -34,7 +33,6 @@ export const contactFormSchema = z.object({
 export type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export const defaultContactFormValues: ContactFormValues = {
-  budget: "",
   company: "",
   country: "",
   email: "",

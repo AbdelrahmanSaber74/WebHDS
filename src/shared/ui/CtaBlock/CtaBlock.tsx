@@ -32,37 +32,48 @@ function ActionLink({
 export function CtaBlock({ content, ...props }: CtaBlockProps) {
   return (
     <Card
-      p={{ base: "7", md: "12" }}
+      overflow="hidden"
+      p={{ base: "8", md: "12", lg: "14" }}
       position="relative"
       textAlign="center"
       variant="feature"
       _before={{
-        bg: "linear-gradient(90deg, transparent, token(colors.brand.soft), transparent)",
-        content: '""',
+        bg: "linear-gradient(90deg, transparent, token(colors.brand.primary), token(colors.brand.accent), transparent)",
+        content: '\"\"',
         h: "1px",
-        insetInline: "8",
+        insetInline: "10",
+        opacity: "0.75",
         position: "absolute",
         top: "0",
       }}
+      _after={{
+        bg: "radial-gradient(circle at 18% 30%, token(colors.brand.soft), transparent 34%), radial-gradient(circle at 82% 20%, rgba(244, 183, 89, 0.18), transparent 30%)",
+        content: '\"\"',
+        inset: "0",
+        opacity: "0.85",
+        pointerEvents: "none",
+        position: "absolute",
+      }}
       {...props}
     >
-      <Stack align="center" gap="6" maxW="containerMd" mx="auto" position="relative">
+      <Stack align="center" gap="6" maxW="containerMd" mx="auto" position="relative" zIndex="1">
         {content.illustration ? <Box aria-hidden="true">{content.illustration}</Box> : null}
-        <Heading as="h2" fontSize={{ base: "3xl", md: "5xl" }} lineHeight="tight">
+        <Heading
+          as="h2"
+          fontSize={{ base: "3xl", md: "5xl" }}
+          fontWeight="extrabold"
+          lineHeight="0.98"
+          maxW="containerMd"
+        >
           {content.title}
         </Heading>
         {content.description ? (
-          <Text
-            color="fg.muted"
-            fontSize={{ base: "md", md: "lg" }}
-            lineHeight="relaxed"
-            maxW="containerSm"
-          >
+          <Text color="fg.muted" fontSize={{ base: "md", md: "lg" }} lineHeight="relaxed" maxW="xl">
             {content.description}
           </Text>
         ) : null}
         {content.primaryAction || content.secondaryAction ? (
-          <Stack direction={{ base: "column", sm: "row" }} gap="3" pt="1">
+          <Stack direction={{ base: "column", sm: "row" }} gap="3" pt="2">
             {content.primaryAction ? (
               <ActionLink action={content.primaryAction} variant="solid" />
             ) : null}

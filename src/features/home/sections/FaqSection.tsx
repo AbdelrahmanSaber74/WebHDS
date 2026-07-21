@@ -1,3 +1,4 @@
+import { SimpleGrid, Stack } from "@chakra-ui/react";
 import { Section } from "@/shared/layouts";
 import { Accordion } from "@/shared/ui";
 import { useI18n } from "@/shared/i18n";
@@ -16,10 +17,19 @@ export function FaqSection({ data }: FaqSectionProps) {
     content: t(item.contentKey),
   }));
 
+  const midIndex = Math.ceil(items.length / 2);
+  const leftColItems = items.slice(0, midIndex);
+  const rightColItems = items.slice(midIndex);
+
   return (
-    <Section containerSize="md" bg="bg.subtle">
-      <HomeSectionHeader header={data.header} />
-      <Accordion items={items} />
+    <Section containerSize="xl" bg="bg.subtle">
+      <Stack gap={{ base: "5", md: "6" }} align="stretch">
+        <HomeSectionHeader header={data.header} />
+        <SimpleGrid columns={{ base: 1, lg: 2 }} gap="6" alignItems="start">
+          <Accordion items={leftColItems} />
+          <Accordion items={rightColItems} />
+        </SimpleGrid>
+      </Stack>
     </Section>
   );
 }

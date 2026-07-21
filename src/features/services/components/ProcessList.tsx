@@ -11,7 +11,7 @@ export function ProcessList({ steps }: ProcessListProps) {
   const { t } = useI18n();
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap="5">
+    <SimpleGrid columns={{ base: 1, sm: 2, lg: 4 }} gap="5">
       {steps.map((step, index) => (
         <Card key={step.id} h="full">
           <Stack gap="4">

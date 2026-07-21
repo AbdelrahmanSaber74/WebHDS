@@ -17,7 +17,7 @@ export function CompanyOfficesSection({ offices }: CompanyOfficesSectionProps) {
         <Heading as="h2" fontSize={{ base: "3xl", md: "5xl" }}>
           {t("company.offices.title")}
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap="5">
+        <SimpleGrid columns={{ base: 1, sm: 2 }} gap="5">
           {offices.map((office) => (
             <Card key={office.id} h="full">
               <Stack gap="3">

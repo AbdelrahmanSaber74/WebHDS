@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/react";
-import { useState } from "react";
 import { usePortfolio } from "@/features/portfolio/hooks";
 import {
   FeaturedProjectsSection,
@@ -8,14 +7,11 @@ import {
   PortfolioStatisticsSection,
   ProjectsGridSection,
 } from "@/features/portfolio/sections";
-import type { PortfolioFilterState } from "@/features/portfolio/types";
 import { useSeo } from "@/shared/hooks";
 
 export function PortfolioListingFeature() {
   useSeo("portfolio");
-  const [filters, setFilters] = useState<PortfolioFilterState>({});
-  const { featuredProjects, filterOptions, listing, projects } = usePortfolio(filters);
-  const { projects: allProjects } = usePortfolio();
+  const { featuredProjects, listing, projects } = usePortfolio();
 
   return (
     <Box as="main" id="main-content">
@@ -23,12 +19,9 @@ export function PortfolioListingFeature() {
       <FeaturedProjectsSection data={listing.featured} projects={featuredProjects} />
       <ProjectsGridSection
         data={listing.grid}
-        filterOptions={filterOptions}
-        filters={filters}
-        onFiltersChange={setFilters}
         projects={projects}
       />
-      <PortfolioStatisticsSection data={listing.statistics} projects={allProjects} />
+      <PortfolioStatisticsSection data={listing.statistics} projects={projects} />
       <PortfolioCtaSection data={listing.cta} />
     </Box>
   );

@@ -1,4 +1,3 @@
-﻿import { images } from "@/assets/images";
 import type { ServicesListingContent } from "@/features/services/types";
 
 export const servicesListingData = {
@@ -10,7 +9,7 @@ export const servicesListingData = {
     primaryHref: "/#contact",
     secondaryLabel: "services.listing.hero.secondary",
     secondaryHref: "/#process",
-    image: images.hdsEnterpriseHero,
+    image: "/hero.png",
     imageAlt: "services.listing.hero.imageAlt",
   },
   technologies: {

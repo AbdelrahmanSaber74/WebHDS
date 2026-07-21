@@ -1,4 +1,4 @@
-﻿import { Box, Heading, Stack, Text, chakra } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text, chakra } from "@chakra-ui/react";
 import { Headphones, Mail, Phone, Send } from "lucide-react";
 import type { ReactNode } from "react";
 import { Card } from "@/shared/ui";
@@ -54,6 +54,8 @@ export function ContactMethodCard({ channel, method }: ContactMethodCardProps) {
             fontWeight="semibold"
             href={channel.href}
             wordBreak="break-word"
+            dir="ltr"
+            display="inline-block"
           >
             {channel.value}
           </chakra.a>

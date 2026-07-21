@@ -1,5 +1,5 @@
-﻿import { Box, HStack, IconButton, Link, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
-import { ChevronDown, Languages, Menu, Moon, Search, Sun, X } from "lucide-react";
+import { Box, HStack, IconButton, Link, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
+import { ChevronDown, Languages, Menu, Moon, Search, Sun, X, Code2, Smartphone, Palette, Cloud } from "lucide-react";
 import type { ReactNode } from "react";
 import { useCallback, useState } from "react";
 import { useScrollState } from "@/shared/hooks";
@@ -59,6 +59,32 @@ function isActivePath(currentPath: string, href: string) {
   return currentPath === href || currentPath.startsWith(`${href}/`);
 }
 
+function getServiceIcon(href: string) {
+  const path = href.toLowerCase();
+  if (path.includes("web")) {
+    return {
+      icon: <Code2 size={20} color="#00f2fe" />,
+      bg: "rgba(0, 242, 254, 0.1)",
+    };
+  }
+  if (path.includes("mobile")) {
+    return {
+      icon: <Smartphone size={20} color="#3b82f6" />,
+      bg: "rgba(59, 130, 246, 0.1)",
+    };
+  }
+  if (path.includes("design") || path.includes("ux")) {
+    return {
+      icon: <Palette size={20} color="#ec4899" />,
+      bg: "rgba(236, 72, 153, 0.1)",
+    };
+  }
+  return {
+    icon: <Cloud size={20} color="#10b981" />,
+    bg: "rgba(16, 185, 129, 0.1)",
+  };
+}
+
 export function Navbar({
   brand,
   closeLabel,
@@ -73,11 +99,14 @@ export function Navbar({
 }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMegaOpen, setIsMegaOpen] = useState(false);
-  const { direction, isScrolled } = useScrollState();
+  const { isScrolled } = useScrollState();
   const visibleItems = items.filter((item) => item.isEnabled ?? true);
   const visibleMegaItems = servicesMenu?.items.filter((item) => item.isEnabled ?? true) ?? [];
 
-  const shouldHide = direction === "down" && isScrolled && !isOpen;
+
+  const nextLanguageOption =
+    language.options.find((option) => option.locale !== language.activeLocale) ??
+    language.options[0];
 
   const toggleMenu = useCallback(() => setIsOpen((current) => !current), []);
   const closeMenu = useCallback(() => setIsOpen(false), []);
@@ -91,8 +120,7 @@ export function Navbar({
       position="sticky"
       top="0"
       zIndex="sticky"
-      transform={shouldHide ? "translateY(-100%)" : "translateY(0)"}
-      transition="transform var(--hds-transition-normal), background var(--hds-transition-normal), box-shadow var(--hds-transition-normal)"
+      transition="background var(--hds-transition-normal), box-shadow var(--hds-transition-normal)"
     >
       <Box
         borderBottom="1px solid"
@@ -105,7 +133,7 @@ export function Navbar({
           <HStack
             as="nav"
             aria-label={menuLabel}
-            minH={isScrolled ? "16" : "20"}
+            minH={{ base: "16", lg: isScrolled ? "16" : "20" }}
             justify="space-between"
           >
             <Box>{brand}</Box>
@@ -172,32 +200,59 @@ export function Navbar({
                       borderColor="border.subtle"
                       boxShadow="premium"
                       insetInlineStart="0"
-                      minW="xl"
-                      p="4"
+                      minW="2xl"
+                      p="5"
                       position="absolute"
                       rounded="panel"
                       top="calc(100% + var(--chakra-spacing-3))"
                     >
-                      <SimpleGrid columns={2} gap="2" role="menu">
-                        {visibleMegaItems.map((item) => (
-                          <Link
-                            key={item.href}
-                            href={item.href}
-                            p="4"
-                            rounded="panel"
-                            role="menuitem"
-                            _hover={{ bg: "brand.soft", textDecoration: "none" }}
-                          >
-                            <Text color="fg.default" fontWeight="semibold">
-                              {item.label}
-                            </Text>
-                            {item.description ? (
-                              <Text color="fg.muted" fontSize="sm" mt="1">
-                                {item.description}
-                              </Text>
-                            ) : null}
-                          </Link>
-                        ))}
+                      <SimpleGrid columns={2} gap="3" role="menu">
+                        {visibleMegaItems.map((item) => {
+                          const serviceInfo = getServiceIcon(item.href);
+                          return (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              p="3"
+                              rounded="panel"
+                              role="menuitem"
+                              display="flex"
+                              alignItems="start"
+                              transition="all 0.2s"
+                              _hover={{
+                                bg: "brand.soft",
+                                textDecoration: "none",
+                                transform: "translateY(-1px)",
+                                boxShadow: "sm"
+                              }}
+                            >
+                              <HStack gap="3.5" align="start" w="full">
+                                <Box
+                                  flexShrink={0}
+                                  display="flex"
+                                  alignItems="center"
+                                  justifyContent="center"
+                                  h="10"
+                                  w="10"
+                                  rounded="lg"
+                                  bg={serviceInfo.bg}
+                                >
+                                  {serviceInfo.icon}
+                                </Box>
+                                <Stack gap="1">
+                                  <Text color="fg.default" fontWeight="bold" fontSize="sm">
+                                    {item.label}
+                                  </Text>
+                                  {item.description ? (
+                                    <Text color="fg.muted" fontSize="xs" lineHeight="relaxed">
+                                      {item.description}
+                                    </Text>
+                                  ) : null}
+                                </Stack>
+                              </HStack>
+                            </Link>
+                          );
+                        })}
                       </SimpleGrid>
                     </Box>
                   ) : null}
@@ -213,21 +268,18 @@ export function Navbar({
               >
                 <Search aria-hidden="true" size={18} />
               </IconButton>
-              <HStack display={{ base: "none", lg: "flex" }} gap="1">
-                {language.options.map((option) => (
-                  <Button
-                    aria-label={`${language.label}: ${option.label}`}
-                    aria-pressed={language.activeLocale === option.locale}
-                    key={option.locale}
-                    onClick={() => language.onChange(option.locale)}
-                    size="sm"
-                    variant={language.activeLocale === option.locale ? "subtle" : "ghost"}
-                  >
-                    <Languages aria-hidden="true" size={16} />
-                    {option.label}
-                  </Button>
-                ))}
-              </HStack>
+              {nextLanguageOption ? (
+                <Button
+                  aria-label={`${language.label}: ${nextLanguageOption.label}`}
+                  display={{ base: "none", lg: "inline-flex" }}
+                  onClick={() => language.onChange(nextLanguageOption.locale)}
+                  size="sm"
+                  variant="ghost"
+                >
+                  <Languages aria-hidden="true" size={16} />
+                  {nextLanguageOption.label}
+                </Button>
+              ) : null}
               <IconButton aria-label={theme.label} onClick={toggleTheme} variant="ghost">
                 {theme.isDark ? (
                   <Sun aria-hidden="true" size={18} />
@@ -324,20 +376,17 @@ export function Navbar({
                 </Stack>
               ) : null}
 
-              <HStack gap="2" wrap="wrap">
-                {language.options.map((option) => (
-                  <Button
-                    aria-label={`${language.label}: ${option.label}`}
-                    aria-pressed={language.activeLocale === option.locale}
-                    key={option.locale}
-                    onClick={() => language.onChange(option.locale)}
-                    size="sm"
-                    variant={language.activeLocale === option.locale ? "subtle" : "outline"}
-                  >
-                    {option.label}
-                  </Button>
-                ))}
-              </HStack>
+              {nextLanguageOption ? (
+                <Button
+                  aria-label={`${language.label}: ${nextLanguageOption.label}`}
+                  onClick={() => language.onChange(nextLanguageOption.locale)}
+                  size="sm"
+                  variant="outline"
+                >
+                  <Languages aria-hidden="true" size={16} />
+                  {nextLanguageOption.label}
+                </Button>
+              ) : null}
 
               {cta ? (
                 <Button asChild size="lg">

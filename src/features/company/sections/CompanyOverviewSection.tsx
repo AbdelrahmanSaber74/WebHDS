@@ -13,7 +13,7 @@ export function CompanyOverviewSection({ company }: CompanyOverviewSectionProps)
 
   return (
     <SectionContainer>
-      <SimpleGrid columns={{ base: 1, lg: 2 }} gap="6">
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap="6">
         <Stack gap="4">
           <Text color="brand.primary" fontWeight="semibold">
             {company.name}

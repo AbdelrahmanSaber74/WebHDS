@@ -11,7 +11,7 @@ export function ContentGrid({ items }: ContentGridProps) {
   const { t } = useI18n();
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap="5">
+    <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} gap="5">
       {items.map((item) => (
         <Card key={item} h="full">
           <Stack direction="row" gap="3">

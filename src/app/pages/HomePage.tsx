@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+﻿import { Box } from "@chakra-ui/react";
 import {
   useCompany,
   useCompanyContact,
@@ -7,14 +7,13 @@ import {
   buildOrganizationSchema,
 } from "@/features/company";
 import {
+  AboutSection,
   ClientsSection,
   CtaSection,
   FaqSection,
   HeroSection,
   ProcessSection,
   ServicesPreviewSection,
-  StatisticsSection,
-  TechnologiesSection,
   TestimonialsSection,
   useHomeContent,
   WhyChooseUsSection,
@@ -52,12 +51,11 @@ export function HomePage() {
   return (
     <Box as="main" id="main-content">
       <HeroSection data={homeContent.hero} />
-      <ClientsSection data={homeContent.clients} />
+      <AboutSection data={homeContent.about} />
       <ServicesPreviewSection data={homeContent.servicesPreview} />
-      <TechnologiesSection data={homeContent.technologies} />
-      <WhyChooseUsSection data={homeContent.whyChooseUs} />
       <ProcessSection data={homeContent.process} />
-      <StatisticsSection data={homeContent.statistics} />
+      <WhyChooseUsSection data={homeContent.whyChooseUs} statistics={homeContent.statistics} />
+      <ClientsSection data={homeContent.clients} />
       <TestimonialsSection data={homeContent.testimonials} />
       <FaqSection data={homeContent.faq} />
       <CtaSection data={homeContent.cta} />

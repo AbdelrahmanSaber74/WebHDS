@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+      <rect width="800" height="500" fill="#0b1315"/>
+      <!-- Header -->
+      <rect x="30" y="30" width="740" height="50" rx="8" fill="#142429"/>
+      <circle cx="60" cy="55" r="8" fill="#ff5f56"/>
+      <circle cx="85" cy="55" r="8" fill="#ffbd2e"/>
+      <circle cx="110" cy="55" r="8" fill="#27c93f"/>
+      <text x="140" y="61" fill="#71939c" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">FactoryGrid Industrial Ops Control</text>
+      
+      <!-- Operations Dashboard layout -->
+      <rect x="30" y="100" width="500" height="370" rx="8" fill="#142429"/>
+      <text x="55" y="145" fill="#ffffff" font-family="system-ui" font-size="18" font-weight="bold">Production Line Efficiency</text>
+      
+      <!-- Bar Chart -->
+      <rect x="80" y="200" width="40" height="200" rx="4" fill="url(#factoryGrad)" opacity="0.8"/>
+      <text x="100" y="420" fill="#71939c" font-family="system-ui" font-size="12" text-anchor="middle">Line 1</text>
+      
+      <rect x="160" y="240" width="40" height="160" rx="4" fill="url(#factoryGrad)" opacity="0.8"/>
+      <text x="180" y="420" fill="#71939c" font-family="system-ui" font-size="12" text-anchor="middle">Line 2</text>
+      
+      <rect x="240" y="170" width="40" height="230" rx="4" fill="url(#factoryGrad)" opacity="0.8"/>
+      <text x="260" y="420" fill="#71939c" font-family="system-ui" font-size="12" text-anchor="middle">Line 3</text>
+      
+      <rect x="320" y="280" width="40" height="120" rx="4" fill="url(#factoryGrad)" opacity="0.8"/>
+      <text x="340" y="420" fill="#71939c" font-family="system-ui" font-size="12" text-anchor="middle">Line 4</text>
+      
+      <rect x="400" y="210" width="40" height="190" rx="4" fill="url(#factoryGrad)" opacity="0.8"/>
+      <text x="420" y="420" fill="#71939c" font-family="system-ui" font-size="12" text-anchor="middle">Line 5</text>
+
+      <!-- Right statistics -->
+      <rect x="550" y="100" width="220" height="370" rx="8" fill="#142429"/>
+      <text x="575" y="145" fill="#71939c" font-family="system-ui" font-size="12" font-weight="bold" letter-spacing="1">DOWNTIME REDUCTION</text>
+      <text x="575" y="200" fill="#06b6d4" font-family="system-ui" font-size="48" font-weight="bold">21%</text>
+      <text x="575" y="225" fill="#71939c" font-family="system-ui" font-size="12">Industrial efficiency gains</text>
+      <path d="M 575 255 L 745 255" stroke="#1c3d31" stroke-width="1"/>
+      <text x="575" y="300" fill="#22c55e" font-family="system-ui" font-size="44" font-weight="bold">48%</text>
+      <text x="575" y="325" fill="#71939c" font-family="system-ui" font-size="12">Alert noise reduced</text>
+
+      <defs>
+        <linearGradient id="factoryGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#0891b2" />
+          <stop offset="100%" stop-color="#06b6d4" />
+        </linearGradient>
+      </defs>
+    </svg>

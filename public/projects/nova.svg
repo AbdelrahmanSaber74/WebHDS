@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+      <rect width="800" height="500" fill="#0f0913"/>
+      <!-- Header -->
+      <rect x="30" y="30" width="740" height="50" rx="8" fill="#1c1224"/>
+      <circle cx="60" cy="55" r="8" fill="#ff5f56"/>
+      <circle cx="85" cy="55" r="8" fill="#ffbd2e"/>
+      <circle cx="110" cy="55" r="8" fill="#27c93f"/>
+      <text x="140" y="61" fill="#a393b3" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">Nova Global Payment Gateway</text>
+      <!-- Main Content -->
+      <rect x="30" y="100" width="460" height="370" rx="8" fill="#1c1224"/>
+      <text x="60" y="145" fill="#a393b3" font-family="system-ui" font-size="14" font-weight="bold">Nova Secure Credit Card Mockup</text>
+      <!-- Credit Card Glassmorphism -->
+      <rect x="60" y="180" width="400" height="230" rx="16" fill="url(#cardGrad)" opacity="0.85" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.15"/>
+      <text x="100" y="230" fill="#ffffff" font-family="monospace" font-size="24" font-weight="bold" letter-spacing="4">NOVA PAY</text>
+      <rect x="100" y="250" width="60" height="40" rx="6" fill="#fbc2eb" opacity="0.3"/>
+      <text x="100" y="330" fill="#ffffff" font-family="monospace" font-size="20" letter-spacing="2">**** **** **** 8824</text>
+      <text x="100" y="375" fill="#a393b3" font-family="system-ui" font-size="12">EXP: 09/31</text>
+      <text x="350" y="375" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="bold">GOLD MEMBER</text>
+      <!-- Right Side metrics -->
+      <rect x="510" y="100" width="260" height="170" rx="8" fill="#1c1224"/>
+      <text x="535" y="135" fill="#a393b3" font-family="system-ui" font-size="12" font-weight="bold" letter-spacing="1">SUCCESSFUL RATES</text>
+      <text x="535" y="195" fill="#a18cd1" font-family="system-ui" font-size="48" font-weight="bold">99.98%</text>
+      <path d="M 535 240 L 745 240" stroke="#2e1f3b" stroke-width="2"/>
+      <text x="535" y="258" fill="#fbc2eb" font-family="system-ui" font-size="12">PCI-DSS Compliant</text>
+      
+      <rect x="510" y="290" width="260" height="180" rx="8" fill="#1c1224"/>
+      <text x="535" y="325" fill="#a393b3" font-family="system-ui" font-size="12" font-weight="bold" letter-spacing="1">TRANSACTIONS SPEED</text>
+      <text x="535" y="385" fill="#fbc2eb" font-family="system-ui" font-size="48" font-weight="bold">12ms</text>
+      <path d="M 535 430 L 745 430" stroke="#2e1f3b" stroke-width="2"/>
+      <text x="535" y="448" fill="#a18cd1" font-family="system-ui" font-size="12">0 incidents reported</text>
+
+      <defs>
+        <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#a18cd1" />
+          <stop offset="100%" stop-color="#fbc2eb" />
+        </linearGradient>
+      </defs>
+    </svg>

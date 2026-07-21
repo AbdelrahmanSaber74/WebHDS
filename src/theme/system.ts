@@ -1,4 +1,4 @@
-﻿import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
+import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
 import {
   breakpoints,
   colorTokens,
@@ -33,10 +33,6 @@ const config = defineConfig({
         outlineColor: "brand.primary",
         outlineOffset: "3px",
       },
-    "::selection": {
-      color: "white",
-      bg: "brand.primary",
-    },
   },
   theme: {
     breakpoints,
