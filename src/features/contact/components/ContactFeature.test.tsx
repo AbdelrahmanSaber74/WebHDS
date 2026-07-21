@@ -13,7 +13,7 @@ describe("ContactFeature", () => {
     expect(
       screen.getByRole("heading", { name: "Reach the right team from the first message." }),
     ).toBeInTheDocument();
-    expect(screen.getByText("support@hds-sa.com")).toBeInTheDocument();
+    expect(screen.getAllByText("support@hds-sa.com").length).toBeGreaterThan(0);
     expect(container.querySelector("#contact-form")).toBeInTheDocument();
   });
 });

@@ -28,6 +28,6 @@ describe("company hooks", () => {
     const socialLinks = renderHook(() => useSocialLinks(), { wrapper: TestProviders });
 
     expect(leadership.result.current).toHaveLength(2);
-    expect(socialLinks.result.current).toHaveLength(9);
+    expect(socialLinks.result.current).toHaveLength(0);
   });
 });

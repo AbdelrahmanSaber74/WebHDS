@@ -1,4 +1,4 @@
-﻿import { screen, waitFor } from "@testing-library/react";
+import { screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 import { renderWithProviders } from "@/shared/utils/test-utils";
@@ -36,7 +36,6 @@ describe("ContactForm", () => {
     await user.selectOptions(screen.getByLabelText(/country/i), "egypt");
     await user.selectOptions(screen.getByLabelText(/industry/i), "healthcare");
     await user.selectOptions(screen.getByLabelText(/service/i), "web-development");
-    await user.selectOptions(screen.getByLabelText(/budget/i), "25k-50k");
     await user.selectOptions(screen.getByLabelText(/timeline/i), "one-to-three-months");
     await user.type(
       screen.getByLabelText(/project message/i),
@@ -61,7 +60,6 @@ describe("ContactForm", () => {
     await user.selectOptions(screen.getByLabelText(/country/i), "egypt");
     await user.selectOptions(screen.getByLabelText(/industry/i), "healthcare");
     await user.selectOptions(screen.getByLabelText(/service/i), "web-development");
-    await user.selectOptions(screen.getByLabelText(/budget/i), "25k-50k");
     await user.selectOptions(screen.getByLabelText(/timeline/i), "one-to-three-months");
     await user.type(
       screen.getByLabelText(/project message/i),
