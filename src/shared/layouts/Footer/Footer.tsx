@@ -80,11 +80,7 @@ export function Footer({
     >
       <Container>
         {/* Main Grid */}
-        <SimpleGrid
-          columns={{ base: 1, lg: 12 }}
-          gap={{ base: "10", lg: "12" }}
-          pb="12"
-        >
+        <SimpleGrid columns={{ base: 1, lg: 12 }} gap={{ base: "10", lg: "12" }} pb="12">
           {/* Column 1: Brand details & Social Icons (span 3) */}
           <Stack gap="5" gridColumn={{ lg: "span 3" }} maxW="md">
             <Box>{brand}</Box>
@@ -173,12 +169,24 @@ export function Footer({
                         {office.address}
                       </Text>
                       {office.phone ? (
-                        <Link href={`tel:${office.phone.replace(/\s+/g, '')}`} fontSize="xs" color="fg.muted" dir="ltr" display="inline-block" _hover={{ color: "brand.primary", textDecoration: "none" }}>
+                        <Link
+                          href={`tel:${office.phone.replace(/\s+/g, "")}`}
+                          fontSize="xs"
+                          color="fg.muted"
+                          dir="ltr"
+                          display="inline-block"
+                          _hover={{ color: "brand.primary", textDecoration: "none" }}
+                        >
                           {office.phone}
                         </Link>
                       ) : null}
                       {office.email ? (
-                        <Link href={`mailto:${office.email}`} fontSize="xs" color="fg.muted" _hover={{ color: "brand.primary", textDecoration: "none" }}>
+                        <Link
+                          href={`mailto:${office.email}`}
+                          fontSize="xs"
+                          color="fg.muted"
+                          _hover={{ color: "brand.primary", textDecoration: "none" }}
+                        >
                           {office.email}
                         </Link>
                       ) : null}
@@ -243,7 +251,6 @@ export function Footer({
                 ))}
               </Stack>
             ) : null}
-
           </Stack>
         </SimpleGrid>
 

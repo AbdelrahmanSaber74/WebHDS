@@ -35,7 +35,13 @@ export function CompanyStorySection({ data }: CompanyStorySectionProps) {
         </SimpleGrid>
 
         {/* Bottom Section: Proof Points / Metric Cards arranged horizontally */}
-        <SimpleGrid columns={{ base: 1, md: 3 }} gap="5" pt="8" borderTop="1px solid" borderColor="border.subtle">
+        <SimpleGrid
+          columns={{ base: 1, md: 3 }}
+          gap="5"
+          pt="8"
+          borderTop="1px solid"
+          borderColor="border.subtle"
+        >
           {data.proofPoints.map((item) => (
             <AboutMetricCard key={item.id} label={t(item.label)} value={t(item.value)} />
           ))}

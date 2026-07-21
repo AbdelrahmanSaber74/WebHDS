@@ -17,7 +17,12 @@ export function Section({
   ...props
 }: SectionProps) {
   return (
-    <Box as="section" py={spacing === "default" ? "sectionY" : "sectionYCompact"} position="relative" {...props}>
+    <Box
+      as="section"
+      py={spacing === "default" ? "sectionY" : "sectionYCompact"}
+      position="relative"
+      {...props}
+    >
       <Container size={containerSize} position="relative" zIndex="2">
         {children}
       </Container>

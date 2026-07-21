@@ -16,7 +16,11 @@ export function Loader({ label }: LoaderProps) {
       w="full"
     >
       <Spinner color="brand.primary" size="lg" />
-      {label ? <Text color="fg.muted" fontSize="sm">{label}</Text> : null}
+      {label ? (
+        <Text color="fg.muted" fontSize="sm">
+          {label}
+        </Text>
+      ) : null}
     </VStack>
   );
 }

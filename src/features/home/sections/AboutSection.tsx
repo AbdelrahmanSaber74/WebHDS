@@ -49,10 +49,16 @@ function EnterpriseMockup() {
         opacity="0.25"
         position="absolute"
       />
-      
+
       {/* Flow visualization */}
       <Stack gap="6" w="full" maxW="xs" zIndex="1" position="relative">
-        <Card variant="glass" p="4" boxShadow="lift" borderLeft="3px solid" borderLeftColor="brand.primary">
+        <Card
+          variant="glass"
+          p="4"
+          boxShadow="lift"
+          borderLeft="3px solid"
+          borderLeftColor="brand.primary"
+        >
           <Stack direction="row" align="center" gap="3.5">
             <Circle size="10" bg="brand.soft" color="brand.primary" shadow="sm">
               <Cpu size={18} />
@@ -90,19 +96,25 @@ function EnterpriseMockup() {
               left="-2px"
               animate={{
                 top: ["0%", "100%"],
-                opacity: [0, 1, 1, 0]
+                opacity: [0, 1, 1, 0],
               }}
               transition={{
                 duration: 2.2,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             />
           </Box>
         </Box>
 
         <SimpleGrid columns={2} gap="4">
-          <Card variant="glass" p="4" boxShadow="sm" borderLeft="3px solid" borderLeftColor="colors.hds.blue">
+          <Card
+            variant="glass"
+            p="4"
+            boxShadow="sm"
+            borderLeft="3px solid"
+            borderLeftColor="colors.hds.blue"
+          >
             <Stack gap="3" align="center" textAlign="center">
               <Circle size="9" bg="brand.soft" color="colors.hds.blue">
                 <Database size={16} />
@@ -112,7 +124,13 @@ function EnterpriseMockup() {
               </Text>
             </Stack>
           </Card>
-          <Card variant="glass" p="4" boxShadow="sm" borderLeft="3px solid" borderLeftColor="brand.accent">
+          <Card
+            variant="glass"
+            p="4"
+            boxShadow="sm"
+            borderLeft="3px solid"
+            borderLeftColor="brand.accent"
+          >
             <Stack gap="3" align="center" textAlign="center">
               <Circle size="9" bg="brand.soft" color="brand.accent">
                 <Network size={16} />
@@ -161,7 +179,11 @@ export function AboutSection({ data }: AboutSectionProps) {
             <HomeSectionHeader header={data.header} />
 
             {/* Two-Column Grid below Header */}
-            <SimpleGrid columns={{ base: 1, lg: 12 }} gap={{ base: "10", lg: "16" }} alignItems="center">
+            <SimpleGrid
+              columns={{ base: 1, lg: 12 }}
+              gap={{ base: "10", lg: "16" }}
+              alignItems="center"
+            >
               {/* Interactive Visual Mockup (Left Column) */}
               <Box gridColumn={{ base: "span 1", lg: "span 5" }} w="full">
                 <EnterpriseMockup />
@@ -169,11 +191,7 @@ export function AboutSection({ data }: AboutSectionProps) {
 
               {/* Description and Highlights (Right Column) */}
               <Stack gridColumn={{ base: "span 1", lg: "span 7" }} gap="6">
-                <Text
-                  color="fg.muted"
-                  fontSize="sm"
-                  lineHeight="relaxed"
-                >
+                <Text color="fg.muted" fontSize="sm" lineHeight="relaxed">
                   {t(data.bodyKey)}
                 </Text>
 

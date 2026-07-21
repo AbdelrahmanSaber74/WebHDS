@@ -53,17 +53,17 @@ export function Card({ children, variant = "elevated", ...props }: CardProps) {
               zIndex: "1",
             }
           : variant === "glass"
-          ? {
-              bg: "linear-gradient(90deg, transparent, var(--chakra-colors-brand-primary), transparent)",
-              content: '\"\"',
-              h: "1px",
-              insetInline: "0",
-              opacity: "0.6",
-              position: "absolute",
-              top: "0",
-              zIndex: "1",
-            }
-          : undefined
+            ? {
+                bg: "linear-gradient(90deg, transparent, var(--chakra-colors-brand-primary), transparent)",
+                content: '\"\"',
+                h: "1px",
+                insetInline: "0",
+                opacity: "0.6",
+                position: "absolute",
+                top: "0",
+                zIndex: "1",
+              }
+            : undefined
       }
       _hover={{
         borderColor: "brand.primary",

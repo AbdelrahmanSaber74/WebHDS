@@ -49,7 +49,9 @@ export function Accordion({ items }: AccordionProps) {
                   _hover={{ bg: "transparent", color: "brand.primary" }}
                   _active={{ bg: "transparent" }}
                 >
-                  <Text as="span" pr="4">{item.title}</Text>
+                  <Text as="span" pr="4">
+                    {item.title}
+                  </Text>
                   <Box
                     as="span"
                     transform={isOpen ? "rotate(180deg)" : "rotate(0deg)"}

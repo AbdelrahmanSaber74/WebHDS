@@ -17,10 +17,7 @@ export function PortfolioListingFeature() {
     <Box as="main" id="main-content">
       <PortfolioHeroSection data={listing.hero} />
       <FeaturedProjectsSection data={listing.featured} projects={featuredProjects} />
-      <ProjectsGridSection
-        data={listing.grid}
-        projects={projects}
-      />
+      <ProjectsGridSection data={listing.grid} projects={projects} />
       <PortfolioStatisticsSection data={listing.statistics} projects={projects} />
       <PortfolioCtaSection data={listing.cta} />
     </Box>

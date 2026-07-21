@@ -734,7 +734,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "home.faq.customSystem.title": "Can you program a fully custom website or system?",
     "home.faq.customSystem.content":
       "Yes, we specialize in custom programming, designing high-efficiency enterprise platforms, custom web apps, and mobile applications tailored to your business operations.",
-    "home.faq.ecommerce.title": "Do your services support building fully integrated e-commerce stores?",
+    "home.faq.ecommerce.title":
+      "Do your services support building fully integrated e-commerce stores?",
     "home.faq.ecommerce.content":
       "Yes, we build integrated e-commerce systems complete with payment gateways, shipping methods, and affiliate systems to ensure a smooth, scalable shopping experience.",
     "home.faq.payment.title": "Are electronic payment options integrated into the platforms?",
@@ -746,7 +747,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "home.faq.performance.title": "How do you guarantee website performance and speed?",
     "home.faq.performance.content":
       "We deploy systems on high-performance cloud servers (VPS), optimize database queries and core code, configure CDNs, monitor uptime, and maintain automated daily backups.",
-    "home.faq.technicalSeo.title": "Does the custom software comply with search engine standards (SEO)?",
+    "home.faq.technicalSeo.title":
+      "Does the custom software comply with search engine standards (SEO)?",
     "home.faq.technicalSeo.content":
       "Yes, we build systems with clean semantic HTML, fast loading speeds, structured schema data, and technical SEO optimizations to ensure rapid indexing and search engine visibility.",
     "home.faq.branding.title": "How important is the visual identity of a web product?",
@@ -2344,7 +2346,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "خدمات تطوير الويب للشركات التي تحتاج حلولًا موثوقة وقابلة للتوسع.",
     "services.items.web.seo.keywords": "تطوير الويب، HDS، خدمات برمجية، حلول رقمية",
     "services.items.web.seo.title": "تطوير الويب من HDS",
-    "services.items.web.shortDescription": "بناء منصات ويب متكاملة وسريعة الأداء تناسب مسارات أعمالك وتوفر تجربة مستخدم متميزة.",
+    "services.items.web.shortDescription":
+      "بناء منصات ويب متكاملة وسريعة الأداء تناسب مسارات أعمالك وتوفر تجربة مستخدم متميزة.",
     "services.items.web.subtitle": "تطوير الويب بمستوى إنتاجي واضح وقابل للنمو.",
     "services.items.web.title": "تطوير الويب",
     "services.listing.cta.description":

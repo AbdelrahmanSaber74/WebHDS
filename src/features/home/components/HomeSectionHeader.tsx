@@ -13,16 +13,7 @@ export function HomeSectionHeader({ header }: HomeSectionHeaderProps) {
   const descriptionText = header.descriptionKey ? t(header.descriptionKey).trim() : "";
 
   return (
-    <Stack
-      align="center"
-      gap="4"
-      maxW="4xl"
-      mx="auto"
-      textAlign="center"
-      w="full"
-      mt="0"
-      mb="0"
-    >
+    <Stack align="center" gap="4" maxW="4xl" mx="auto" textAlign="center" w="full" mt="0" mb="0">
       <Badge alignSelf="center" textAlign="center">
         {t(header.eyebrowKey)}
       </Badge>

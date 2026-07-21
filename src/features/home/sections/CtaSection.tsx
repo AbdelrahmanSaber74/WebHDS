@@ -34,7 +34,7 @@ export function CtaSection({ data }: CtaSectionProps) {
           pointerEvents="none"
           zIndex="0"
         />
-        
+
         <Grid
           gap="8"
           position="relative"

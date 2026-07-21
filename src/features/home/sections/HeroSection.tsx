@@ -121,8 +121,14 @@ export function HeroSection({ data }: HeroSectionProps) {
                 "home.hero.trust.delivery",
               ].map((key) => (
                 <Stack key={key} direction="row" gap="2" align="center">
-                  <CheckCircle2 aria-hidden="true" color="var(--chakra-colors-brand-primary)" size={16} />
-                  <Text as="span" fontWeight="medium">{t(key)}</Text>
+                  <CheckCircle2
+                    aria-hidden="true"
+                    color="var(--chakra-colors-brand-primary)"
+                    size={16}
+                  />
+                  <Text as="span" fontWeight="medium">
+                    {t(key)}
+                  </Text>
                 </Stack>
               ))}
             </Stack>
@@ -155,9 +161,24 @@ export function HeroSection({ data }: HeroSectionProps) {
               zIndex: "-1",
             }}
           >
-            <Box overflow="hidden" rounded="panel" position="relative" bg="bg.elevated" border="1px solid" borderColor="border.subtle">
+            <Box
+              overflow="hidden"
+              rounded="panel"
+              position="relative"
+              bg="bg.elevated"
+              border="1px solid"
+              borderColor="border.subtle"
+            >
               {/* Browser mockup controls */}
-              <HStack px="4" py="3.5" bg="bg.subtle" borderBottom="1px solid" borderColor="border.subtle" gap="2" align="center">
+              <HStack
+                px="4"
+                py="3.5"
+                bg="bg.subtle"
+                borderBottom="1px solid"
+                borderColor="border.subtle"
+                gap="2"
+                align="center"
+              >
                 <Circle size="2.5" bg="red.400" />
                 <Circle size="2.5" bg="yellow.400" />
                 <Circle size="2.5" bg="green.400" />

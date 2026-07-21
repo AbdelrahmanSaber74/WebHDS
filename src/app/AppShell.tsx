@@ -1,13 +1,5 @@
 import { Link, Text } from "@chakra-ui/react";
-import {
-  Facebook,
-  Github,
-  Instagram,
-  Linkedin,
-  Twitter,
-  Youtube,
-  Globe
-} from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Twitter, Youtube, Globe } from "lucide-react";
 import { Outlet, useLocation } from "react-router";
 import { footerContent, navigationContent } from "@/app/content";
 import type { Locale } from "@/config";
@@ -121,7 +113,13 @@ export function AppShell() {
   const header = (
     <Navbar
       brand={
-        <Link href={routesConfig.home.path} _hover={{ textDecoration: "none" }} display="flex" alignItems="center" gap="1.5">
+        <Link
+          href={routesConfig.home.path}
+          _hover={{ textDecoration: "none" }}
+          display="flex"
+          alignItems="center"
+          gap="1.5"
+        >
           <img
             src="/logo.png"
             alt={company.legalName}
@@ -167,7 +165,13 @@ export function AppShell() {
   const footer = (
     <Footer
       brand={
-        <Link href={routesConfig.home.path} _hover={{ textDecoration: "none" }} display="inline-flex" alignItems="center" gap="1.5">
+        <Link
+          href={routesConfig.home.path}
+          _hover={{ textDecoration: "none" }}
+          display="inline-flex"
+          alignItems="center"
+          gap="1.5"
+        >
           <img
             src="/logo.png"
             alt={company.legalName}

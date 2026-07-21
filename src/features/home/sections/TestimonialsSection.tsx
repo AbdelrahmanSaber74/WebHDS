@@ -17,7 +17,11 @@ export function TestimonialsSection({ data }: TestimonialsSectionProps) {
     <Section>
       <Stack gap={{ base: "5", md: "6" }} align="stretch">
         <HomeSectionHeader header={data.header} />
-        <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} gap="6" alignItems="stretch">
+        <Grid
+          templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+          gap="6"
+          alignItems="stretch"
+        >
           {data.items.slice(0, 3).map((item) => (
             <Card
               key={item.id}
@@ -41,16 +45,16 @@ export function TestimonialsSection({ data }: TestimonialsSectionProps) {
                     <Badge variant="subtle" colorPalette="teal">
                       {t("home.testimonials.rating")}
                     </Badge>
-                    <Text aria-hidden="true" color="brand.accent" fontSize="xs" letterSpacing="0.1em">
+                    <Text
+                      aria-hidden="true"
+                      color="brand.accent"
+                      fontSize="xs"
+                      letterSpacing="0.1em"
+                    >
                       ★★★★★
                     </Text>
                   </HStack>
-                  <Text
-                    color="fg.default"
-                    fontSize="md"
-                    lineHeight="relaxed"
-                    fontWeight="medium"
-                  >
+                  <Text color="fg.default" fontSize="md" lineHeight="relaxed" fontWeight="medium">
                     “{t(item.quoteKey)}”
                   </Text>
                 </Stack>

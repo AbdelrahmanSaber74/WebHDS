@@ -14,7 +14,7 @@ export const homeFaqData: HomeContent["faq"] = {
     "performance",
     "technicalSeo",
     "branding",
-    "maintenance"
+    "maintenance",
   ].map((id) => ({
     id,
     titleKey: `home.faq.${id}.title`,

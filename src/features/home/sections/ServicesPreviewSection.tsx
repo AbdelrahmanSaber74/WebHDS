@@ -21,11 +21,7 @@ export function ServicesPreviewSection({ data }: ServicesPreviewSectionProps) {
         <HomeSectionHeader header={data.header} />
 
         {/* Unified 3-Column Grid */}
-        <SimpleGrid
-          columns={{ base: 1, md: 2, lg: 3 }}
-          gap="6"
-          alignItems="stretch"
-        >
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap="6" alignItems="stretch">
           {data.items.map((item) => {
             const Icon = item.icon;
             return (

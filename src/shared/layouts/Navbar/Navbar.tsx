@@ -1,5 +1,17 @@
 import { Box, HStack, IconButton, Link, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react";
-import { ChevronDown, Languages, Menu, Moon, Search, Sun, X, Code2, Smartphone, Palette, Cloud } from "lucide-react";
+import {
+  ChevronDown,
+  Languages,
+  Menu,
+  Moon,
+  Search,
+  Sun,
+  X,
+  Code2,
+  Smartphone,
+  Palette,
+  Cloud,
+} from "lucide-react";
 import type { ReactNode } from "react";
 import { useCallback, useState } from "react";
 import { useScrollState } from "@/shared/hooks";
@@ -102,7 +114,6 @@ export function Navbar({
   const { isScrolled } = useScrollState();
   const visibleItems = items.filter((item) => item.isEnabled ?? true);
   const visibleMegaItems = servicesMenu?.items.filter((item) => item.isEnabled ?? true) ?? [];
-
 
   const nextLanguageOption =
     language.options.find((option) => option.locale !== language.activeLocale) ??
@@ -223,7 +234,7 @@ export function Navbar({
                                 bg: "brand.soft",
                                 textDecoration: "none",
                                 transform: "translateY(-1px)",
-                                boxShadow: "sm"
+                                boxShadow: "sm",
                               }}
                             >
                               <HStack gap="3.5" align="start" w="full">
