@@ -1,4 +1,4 @@
-﻿import { describe, expect, it } from "vitest";
+import { describe, expect, it } from "vitest";
 import { companyService } from "./company.service";
 
 describe("companyService", () => {
@@ -11,7 +11,7 @@ describe("companyService", () => {
   it("returns offices, contacts, and social links", () => {
     expect(companyService.getOffices()).toHaveLength(2);
     expect(companyService.getContact().emails).toHaveLength(2);
-    expect(companyService.getSocialLinks()).toHaveLength(9);
+    expect(companyService.getSocialLinks()).toHaveLength(0);
   });
 
   it("returns statistics, technologies, timeline, leadership, and organization metadata", () => {

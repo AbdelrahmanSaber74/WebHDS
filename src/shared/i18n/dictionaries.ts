@@ -540,7 +540,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "seo.notFound.keywords": "HDS, not found",
     "seo.notFound.title": "Page Not Found",
 
-    "home.hero.eyebrow": "",
+    "home.hero.eyebrow": "Enterprise Software Development & Digital Transformation",
     "home.hero.title": "Software platforms engineered for scale, clarity, and growth.",
     "home.hero.description":
       "We design and build enterprise platforms, web and mobile applications, ERP and CRM systems, cloud infrastructure, and AI-powered workflows for organizations that depend on software to operate and grow.",
@@ -1850,7 +1850,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "seo.notFound.keywords": "HDS, غير موجود",
     "seo.notFound.title": "الصفحة غير موجودة",
 
-    "home.hero.eyebrow": "",
+    "home.hero.eyebrow": "تطوير البرمجيات للشركات والتحول الرقمي",
     "home.hero.title": "منصات برمجية مصممة للنمو والوضوح والعمل على نطاق واسع.",
     "home.hero.description":
       "نصمم ونبني منصات مؤسسية وتطبيقات ويب وجوال وأنظمة ERP وCRM وبنية سحابية وسير عمل مدعوم بالذكاء الاصطناعي للمؤسسات التي تعتمد على البرمجيات في التشغيل والنمو.",

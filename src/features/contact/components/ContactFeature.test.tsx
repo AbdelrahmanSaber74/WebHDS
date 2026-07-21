@@ -1,4 +1,4 @@
-﻿import { screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { renderWithProviders } from "@/shared/utils/test-utils";
 import { ContactFeature } from "./ContactFeature";
@@ -13,7 +13,7 @@ describe("ContactFeature", () => {
     expect(
       screen.getByRole("heading", { name: "Reach the right team from the first message." }),
     ).toBeInTheDocument();
-    expect(screen.getByText("hello@hds.example")).toBeInTheDocument();
+    expect(screen.getByText("support@hds-sa.com")).toBeInTheDocument();
     expect(container.querySelector("#contact-form")).toBeInTheDocument();
   });
 });

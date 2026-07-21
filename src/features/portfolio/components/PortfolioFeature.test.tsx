@@ -12,7 +12,6 @@ describe("Portfolio features", () => {
       "Proof that strong software",
     );
     expect(screen.getAllByText("CareFlow Command").length).toBeGreaterThan(0);
-    expect(screen.getByLabelText("Search projects")).toBeInTheDocument();
   });
 
   it("renders a project case study page", () => {

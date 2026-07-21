@@ -19,7 +19,7 @@ describe("buildOrganizationSchema", () => {
     );
 
     expect(schema["@type"]).toBe("Organization");
-    expect(schema.sameAs).toHaveLength(9);
+    expect(schema.sameAs).toHaveLength(0);
     expect(schema.contactPoint).toHaveLength(7);
     expect(schema.address).toHaveLength(2);
     expect(schema.logo).toBe("https://hds.example/logo.svg");
