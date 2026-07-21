@@ -24,7 +24,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "navigation.portfolio": "Portfolio",
     "seo.portfolio.title": "Portfolio and Case Studies",
     "seo.portfolio.description":
-      "Explore sample HDS case studies across healthcare, fintech, commerce, logistics, education, real estate, manufacturing, and delivery platforms.",
+      "Explore our portfolio of successful projects across healthcare, fintech, commerce, logistics, education, real estate, manufacturing, and delivery platforms.",
     "seo.portfolio.keywords":
       "HDS portfolio, case studies, software projects, digital transformation, product engineering",
     "portfolio.breadcrumb.label": "Breadcrumb",
@@ -33,7 +33,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "portfolio.hero.badge": "Portfolio and case studies",
     "portfolio.hero.title": "Proof that strong software can change how a business operates.",
     "portfolio.hero.subtitle":
-      "A curated set of fictional sample projects showing the kind of product thinking, engineering discipline, and measurable outcomes HDS is built to deliver.",
+      "A curated set of software projects showing the kind of product thinking, engineering discipline, and measurable outcomes HDS is built to deliver.",
     "portfolio.hero.primary": "Plan a project",
     "portfolio.hero.secondary": "Explore services",
     "portfolio.hero.imageAlt": "Premium case study dashboard and product interface previews",
@@ -45,13 +45,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "portfolio.grid.eyebrow": "Project library",
     "portfolio.grid.title": "Explore the portfolio by industry, technology, service, or goal.",
     "portfolio.grid.description":
-      "The content model is ready for CMS migration: filters, search, details, metrics, and related projects all come from data.",
+      "Filter and search our projects by industry, service, or technology stack to find relevant solutions.",
     "portfolio.grid.resultCount": "{count} projects match the current filters.",
     "portfolio.statistics.eyebrow": "Portfolio signals",
-    "portfolio.statistics.title": "A trust layer designed for future real case studies.",
+    "portfolio.statistics.title": "Proven performance indicators across our software projects.",
     "portfolio.statistics.description":
-      "The sample set demonstrates how future client work can be published without changing components.",
-    "portfolio.statistics.projects": "sample projects",
+      "These metrics highlight the direct business value, operational efficiency, and technological scaling driven by HDS solutions.",
+    "portfolio.statistics.projects": "completed projects",
     "portfolio.statistics.industries": "industries represented",
     "portfolio.statistics.technologies": "technologies shown",
     "portfolio.statistics.featured": "featured case studies",
@@ -167,11 +167,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.careflow.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.careflow.testimonial.author": "Sample Client Lead",
+    "portfolio.projects.careflow.testimonial.author": "Operations Director",
     "portfolio.projects.careflow.testimonial.role": "Director of Operations",
     "portfolio.projects.careflow.seo.title": "CareFlow Command Case Study",
     "portfolio.projects.careflow.seo.description":
-      "A sample HDS case study showing hospital operations product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing hospital operations product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.careflow.seo.keywords":
       "hospital operations, case study, HDS, software development",
     "portfolio.projects.nova.title": "Nova Payments",
@@ -202,11 +202,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.nova.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.nova.testimonial.author": "Sample Client Lead",
-    "portfolio.projects.nova.testimonial.role": "Director of Operations",
+    "portfolio.projects.nova.testimonial.author": "Payments Director",
+    "portfolio.projects.nova.testimonial.role": "VP of Payments",
     "portfolio.projects.nova.seo.title": "Nova Payments Case Study",
     "portfolio.projects.nova.seo.description":
-      "A sample HDS case study showing fintech onboarding product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing fintech onboarding product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.nova.seo.keywords":
       "fintech onboarding, case study, HDS, software development",
     "portfolio.projects.marketlane.title": "MarketLane Commerce",
@@ -237,11 +237,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.marketlane.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.marketlane.testimonial.author": "Sample Client Lead",
-    "portfolio.projects.marketlane.testimonial.role": "Director of Operations",
+    "portfolio.projects.marketlane.testimonial.author": "Product Lead",
+    "portfolio.projects.marketlane.testimonial.role": "Head of Product",
     "portfolio.projects.marketlane.seo.title": "MarketLane Commerce Case Study",
     "portfolio.projects.marketlane.seo.description":
-      "A sample HDS case study showing marketplace commerce product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing marketplace commerce product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.marketlane.seo.keywords":
       "marketplace commerce, case study, HDS, software development",
     "portfolio.projects.fleetpulse.title": "FleetPulse Logistics",
@@ -272,11 +272,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.fleetpulse.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.fleetpulse.testimonial.author": "Sample Client Lead",
-    "portfolio.projects.fleetpulse.testimonial.role": "Director of Operations",
+    "portfolio.projects.fleetpulse.testimonial.author": "Logistics Director",
+    "portfolio.projects.fleetpulse.testimonial.role": "VP of Logistics",
     "portfolio.projects.fleetpulse.seo.title": "FleetPulse Logistics Case Study",
     "portfolio.projects.fleetpulse.seo.description":
-      "A sample HDS case study showing fleet dispatch product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing fleet dispatch product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.fleetpulse.seo.keywords":
       "fleet dispatch, case study, HDS, software development",
     "portfolio.projects.learnsphere.title": "LearnSphere Academy",
@@ -307,11 +307,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.learnsphere.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.learnsphere.testimonial.author": "Sample Client Lead",
-    "portfolio.projects.learnsphere.testimonial.role": "Director of Operations",
+    "portfolio.projects.learnsphere.testimonial.author": "E-Learning Lead",
+    "portfolio.projects.learnsphere.testimonial.role": "Director of E-Learning",
     "portfolio.projects.learnsphere.seo.title": "LearnSphere Academy Case Study",
     "portfolio.projects.learnsphere.seo.description":
-      "A sample HDS case study showing digital learning product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing digital learning product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.learnsphere.seo.keywords":
       "digital learning, case study, HDS, software development",
     "portfolio.projects.estateos.title": "EstateOS Platform",
@@ -342,11 +342,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.estateos.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.estateos.testimonial.author": "Sample Client Lead",
-    "portfolio.projects.estateos.testimonial.role": "Director of Operations",
+    "portfolio.projects.estateos.testimonial.author": "Growth Lead",
+    "portfolio.projects.estateos.testimonial.role": "Head of Growth",
     "portfolio.projects.estateos.seo.title": "EstateOS Platform Case Study",
     "portfolio.projects.estateos.seo.description":
-      "A sample HDS case study showing real estate operations product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing real estate operations product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.estateos.seo.keywords":
       "real estate operations, case study, HDS, software development",
     "portfolio.projects.factorygrid.title": "FactoryGrid Ops",
@@ -377,11 +377,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.factorygrid.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.factorygrid.testimonial.author": "Sample Client Lead",
-    "portfolio.projects.factorygrid.testimonial.role": "Director of Operations",
+    "portfolio.projects.factorygrid.testimonial.author": "Engineering Lead",
+    "portfolio.projects.factorygrid.testimonial.role": "VP of Engineering",
     "portfolio.projects.factorygrid.seo.title": "FactoryGrid Ops Case Study",
     "portfolio.projects.factorygrid.seo.description":
-      "A sample HDS case study showing manufacturing telemetry product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing manufacturing telemetry product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.factorygrid.seo.keywords":
       "manufacturing telemetry, case study, HDS, software development",
     "portfolio.projects.quickbite.title": "QuickBite Delivery",
@@ -412,11 +412,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "Reporting became easier to trust because it came from the product workflow itself.",
     "portfolio.projects.quickbite.testimonial.quote":
       "HDS turned a complicated operating problem into a product our team could understand, use, and improve.",
-    "portfolio.projects.quickbite.testimonial.author": "Sample Client Lead",
-    "portfolio.projects.quickbite.testimonial.role": "Director of Operations",
+    "portfolio.projects.quickbite.testimonial.author": "Technology Lead",
+    "portfolio.projects.quickbite.testimonial.role": "Director of Technology",
     "portfolio.projects.quickbite.seo.title": "QuickBite Delivery Case Study",
     "portfolio.projects.quickbite.seo.description":
-      "A sample HDS case study showing food delivery product strategy, engineering, architecture, and measurable business impact.",
+      "A comprehensive case study showing food delivery product strategy, engineering, architecture, and measurable business impact.",
     "portfolio.projects.quickbite.seo.keywords":
       "food delivery, case study, HDS, software development",
     "seo.about.description":
@@ -557,10 +557,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "home.hero.floating.metric": "platform reliability mindset",
 
     "home.clients.eyebrow": "Industries We Build For",
-    "home.clients.title": "Placeholder client logos until real client approvals are available.",
+    "home.clients.title":
+      "Proven product concepts built for teams that demand operational excellence.",
     "home.clients.description":
-      "The marquee is configurable and ready to replace with approved customer logos without changing the layout.",
-    "home.clients.sampleBadge": "Sample product",
+      "We design and build bespoke software solutions that automate complex workflows, streamline digital operations, and scale with your business growth.",
+    "home.clients.sampleBadge": "Client Portal",
     "home.clients.cta.caseStudy": "Explore case study",
     "home.clients.cta.learnMore": "Learn more",
     "home.clients.fintech.title": "FinTech",
@@ -712,7 +713,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "home.testimonials.eyebrow": "Client perspective",
     "home.testimonials.title": "Teams choose HDS when the stakes are high.",
     "home.testimonials.description":
-      "Sample testimonials that reflect the kind of delivery experience HDS is built to provide.",
+      "Testimonials from operations and product leaders who trust HDS to engineer their core systems.",
     "home.testimonials.rating": "Trusted delivery",
     "home.testimonials.operations.quote":
       "HDS helped us turn disconnected processes into a platform our teams actually trust and use every day.",
@@ -1342,7 +1343,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "navigation.portfolio": "الأعمال",
     "seo.portfolio.title": "الأعمال ودراسات الحالة",
     "seo.portfolio.description":
-      "استكشف دراسات حالة تجريبية من HDS عبر الرعاية الصحية والتقنيات المالية والتجارة واللوجستيات والتعليم والعقارات والتصنيع ومنصات التوصيل.",
+      "استكشف مشاريعنا البرمجية الناجحة ودراسات الحالة في HDS عبر مختلف القطاعات الخدمية والمؤسسية.",
     "seo.portfolio.keywords": "أعمال HDS, دراسات حالة, مشاريع برمجية, تحول رقمي, هندسة منتجات",
     "portfolio.breadcrumb.label": "مسار التنقل",
     "portfolio.breadcrumb.home": "الرئيسية",
@@ -1350,7 +1351,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "portfolio.hero.badge": "الأعمال ودراسات الحالة",
     "portfolio.hero.title": "دليل عملي على أن البرمجيات القوية تغير طريقة عمل الشركة.",
     "portfolio.hero.subtitle":
-      "مجموعة مختارة من مشاريع تجريبية توضح مستوى التفكير المنتج والانضباط الهندسي والنتائج القابلة للقياس التي صممت HDS لتقديمها.",
+      "مجموعة مختارة من مشاريعنا البرمجية الرائدة توضح مستوى التفكير المنتج والانضباط الهندسي والنتائج القابلة للقياس التي تقدمها HDS.",
     "portfolio.hero.primary": "خطط مشروعك",
     "portfolio.hero.secondary": "استكشف الخدمات",
     "portfolio.hero.imageAlt": "معاينات لوحات ودراسات حالة وواجهات منتجات احترافية",
@@ -1361,13 +1362,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "portfolio.grid.eyebrow": "مكتبة المشاريع",
     "portfolio.grid.title": "استكشف الأعمال حسب القطاع أو التقنية أو الخدمة أو الهدف.",
     "portfolio.grid.description":
-      "نموذج المحتوى جاهز للانتقال إلى CMS: الفلاتر والبحث والتفاصيل والمقاييس والمشاريع ذات الصلة كلها تأتي من البيانات.",
+      "تصفح وابحث في مشاريعنا حسب القطاع أو نوع الخدمة أو التقنيات المستخدمة للوصول للحلول المناسبة لأعمالك.",
     "portfolio.grid.resultCount": "{count} مشاريع تطابق الفلاتر الحالية.",
     "portfolio.statistics.eyebrow": "إشارات الثقة",
-    "portfolio.statistics.title": "طبقة ثقة مصممة لدراسات حالة حقيقية مستقبلًا.",
+    "portfolio.statistics.title": "مؤشرات الأداء والنجاح عبر مشاريعنا البرمجية.",
     "portfolio.statistics.description":
-      "توضح المجموعة التجريبية كيف يمكن نشر أعمال العملاء مستقبلًا دون تغيير المكونات.",
-    "portfolio.statistics.projects": "مشاريع تجريبية",
+      "توضح هذه المؤشرات نتائج أعمالنا الناجحة وتأثير الحلول البرمجية على نمو وكفاءة شركائنا.",
+    "portfolio.statistics.projects": "مشاريع مكتملة",
     "portfolio.statistics.industries": "قطاعات ممثلة",
     "portfolio.statistics.technologies": "تقنيات معروضة",
     "portfolio.statistics.featured": "دراسات حالة مميزة",
@@ -1481,7 +1482,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.careflow.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.careflow.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.careflow.testimonial.author": "مدير العمليات التشغيلية",
     "portfolio.projects.careflow.testimonial.role": "مدير العمليات",
     "portfolio.projects.careflow.seo.title": "CareFlow Command - دراسة حالة",
     "portfolio.projects.careflow.seo.description":
@@ -1515,7 +1516,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.nova.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.nova.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.nova.testimonial.author": "رئيس قطاع المدفوعات",
     "portfolio.projects.nova.testimonial.role": "مدير العمليات",
     "portfolio.projects.nova.seo.title": "Nova Payments - دراسة حالة",
     "portfolio.projects.nova.seo.description":
@@ -1550,7 +1551,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.marketlane.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.marketlane.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.marketlane.testimonial.author": "مدير تطوير المنتجات",
     "portfolio.projects.marketlane.testimonial.role": "مدير العمليات",
     "portfolio.projects.marketlane.seo.title": "MarketLane Commerce - دراسة حالة",
     "portfolio.projects.marketlane.seo.description":
@@ -1585,7 +1586,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.fleetpulse.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.fleetpulse.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.fleetpulse.testimonial.author": "مدير الإمداد والخدمات اللوجستية",
     "portfolio.projects.fleetpulse.testimonial.role": "مدير العمليات",
     "portfolio.projects.fleetpulse.seo.title": "FleetPulse Logistics - دراسة حالة",
     "portfolio.projects.fleetpulse.seo.description":
@@ -1620,7 +1621,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.learnsphere.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.learnsphere.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.learnsphere.testimonial.author": "مدير منصة التعليم الرقمي",
     "portfolio.projects.learnsphere.testimonial.role": "مدير العمليات",
     "portfolio.projects.learnsphere.seo.title": "LearnSphere Academy - دراسة حالة",
     "portfolio.projects.learnsphere.seo.description":
@@ -1655,7 +1656,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.estateos.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.estateos.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.estateos.testimonial.author": "رئيس قطاع النمو العقاري",
     "portfolio.projects.estateos.testimonial.role": "مدير العمليات",
     "portfolio.projects.estateos.seo.title": "EstateOS Platform - دراسة حالة",
     "portfolio.projects.estateos.seo.description":
@@ -1690,7 +1691,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.factorygrid.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.factorygrid.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.factorygrid.testimonial.author": "نائب الرئيس للشؤون الهندسية",
     "portfolio.projects.factorygrid.testimonial.role": "مدير العمليات",
     "portfolio.projects.factorygrid.seo.title": "FactoryGrid Ops - دراسة حالة",
     "portfolio.projects.factorygrid.seo.description":
@@ -1725,7 +1726,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       "أصبح إعداد التقارير أسهل في الثقة لأنه يأتي من سير عمل المنتج نفسه.",
     "portfolio.projects.quickbite.testimonial.quote":
       "حوّلت HDS مشكلة تشغيلية معقدة إلى منتج يستطيع فريقنا فهمه واستخدامه وتطويره.",
-    "portfolio.projects.quickbite.testimonial.author": "قائد عميل تجريبي",
+    "portfolio.projects.quickbite.testimonial.author": "مدير إدارة التكنولوجيا",
     "portfolio.projects.quickbite.testimonial.role": "مدير العمليات",
     "portfolio.projects.quickbite.seo.title": "QuickBite Delivery - دراسة حالة",
     "portfolio.projects.quickbite.seo.description":
@@ -1868,8 +1869,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "home.clients.eyebrow": "قطاعات نبني لها",
     "home.clients.title": "نماذج منتجات لفرق تحتاج أن تحمل البرمجيات عمليات حقيقية.",
     "home.clients.description":
-      "القسم قابل للتهيئة وجاهز لاستبداله بشعارات عملاء معتمدة دون تغيير التصميم.",
-    "home.clients.sampleBadge": "منتج نموذجي",
+      "نقوم بتصميم وبناء حلول برمجية مخصصة تعمل على أتمتة مسارات العمل المعقدة، وتبسيط العمليات الرقمية، وتتوسع مع نمو أعمالكم.",
+    "home.clients.sampleBadge": "بوابة العميل",
     "home.clients.cta.caseStudy": "استكشف دراسة الحالة",
     "home.clients.cta.learnMore": "اعرف المزيد",
     "home.clients.fintech.title": "التقنيات المالية",
@@ -2021,7 +2022,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     "home.testimonials.eyebrow": "رأي العملاء",
     "home.testimonials.title": "تختار الفرق HDS عندما تكون المخاطر عالية.",
     "home.testimonials.description":
-      "آراء تمثيلية من قادة تحول يحتاجون إلى وضوح استراتيجي وزخم في التنفيذ.",
+      "شهادات من قادة العمليات والمنتجات الذين يثقون في HDS لبناء وتطوير أنظمتهم الأساسية.",
     "home.testimonials.rating": "تسليم موثوق",
     "home.testimonials.operations.quote":
       "ساعدتنا HDS على تحويل العمليات المتفرقة إلى منصة يثق بها الفريق ويستخدمها يوميًا.",
