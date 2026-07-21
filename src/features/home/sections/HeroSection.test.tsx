@@ -9,13 +9,7 @@ describe("HeroSection", () => {
     renderWithProviders(<HeroSection data={homeData.hero} />);
 
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Software platforms");
-    expect(screen.getByText("Start a project").closest("a")).toHaveAttribute(
-      "href",
-      "#contact",
-    );
-    expect(screen.getByText("Explore services").closest("a")).toHaveAttribute(
-      "href",
-      "#services",
-    );
+    expect(screen.getByText("Start a project").closest("a")).toHaveAttribute("href", "#contact");
+    expect(screen.getByText("Explore services").closest("a")).toHaveAttribute("href", "#services");
   });
 });
