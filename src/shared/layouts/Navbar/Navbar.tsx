@@ -282,13 +282,16 @@ export function Navbar({
               {nextLanguageOption ? (
                 <Button
                   aria-label={`${language.label}: ${nextLanguageOption.label}`}
-                  display={{ base: "none", lg: "inline-flex" }}
+                  display="inline-flex"
                   onClick={() => language.onChange(nextLanguageOption.locale)}
                   size="sm"
                   variant="ghost"
+                  px={{ base: "2", sm: "3" }}
                 >
                   <Languages aria-hidden="true" size={16} />
-                  {nextLanguageOption.label}
+                  <Box as="span" display={{ base: "none", sm: "inline" }}>
+                    {nextLanguageOption.label}
+                  </Box>
                 </Button>
               ) : null}
               <IconButton aria-label={theme.label} onClick={toggleTheme} variant="ghost">
@@ -322,7 +325,7 @@ export function Navbar({
 
       {isOpen ? (
         <Box
-          bg="bg.panelGradient"
+          bg="bg.elevated"
           borderTop="1px solid"
           borderColor="border.subtle"
           display={{ lg: "none" }}

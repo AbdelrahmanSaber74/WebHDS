@@ -13,7 +13,7 @@ export type AccordionProps = {
 };
 
 export function Accordion({ items }: AccordionProps) {
-  const [openId, setOpenId] = useState<string | null>(items[0]?.id ?? null);
+  const [openId, setOpenId] = useState<string | null>(null);
 
   return (
     <Stack gap="3">
@@ -49,11 +49,12 @@ export function Accordion({ items }: AccordionProps) {
                   _hover={{ bg: "transparent", color: "brand.primary" }}
                   _active={{ bg: "transparent" }}
                 >
-                  <Text as="span" pr="4">
+                  <Text as="span" pe="4">
                     {item.title}
                   </Text>
                   <Box
                     as="span"
+                    flexShrink={0}
                     transform={isOpen ? "rotate(180deg)" : "rotate(0deg)"}
                     transition="transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)"
                     display="inline-flex"
