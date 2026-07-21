@@ -69,6 +69,13 @@ export function Card({ children, variant = "elevated", ...props }: CardProps) {
         borderColor: "brand.primary",
         boxShadow: "lift",
         transform: "translateY(-4px)",
+        _after: {
+          content: '""',
+          position: "absolute",
+          insetInline: 0,
+          bottom: "-6px",
+          height: "6px",
+        },
       }}
       {...variantStyles[variant]}
       {...props}

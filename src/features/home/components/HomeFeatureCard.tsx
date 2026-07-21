@@ -15,7 +15,17 @@ export function HomeFeatureCard({ item }: HomeFeatureCardProps) {
     <Card
       h="full"
       transition="transform 220ms ease, box-shadow 220ms ease"
-      _hover={{ transform: "translateY(-4px)", boxShadow: "lift" }}
+      _hover={{
+        transform: "translateY(-4px)",
+        boxShadow: "lift",
+        _after: {
+          content: '""',
+          position: "absolute",
+          insetInline: 0,
+          bottom: "-6px",
+          height: "6px",
+        },
+      }}
     >
       <Stack gap="5">
         <Circle bg="bg.subtle" color="brand.primary" size="12">

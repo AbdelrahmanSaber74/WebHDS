@@ -126,18 +126,18 @@ export const portfolioProjectsData = [
     challenge: "portfolio.projects.nova.challenge",
     solution: "portfolio.projects.nova.solution",
     implementation: [
-      "portfolio.projects.nova.implementation.release",
-      "portfolio.projects.nova.implementation.release",
+      "portfolio.projects.nova.implementation.discovery",
+      "portfolio.projects.nova.implementation.platform",
       "portfolio.projects.nova.implementation.release",
     ],
     architectureHighlights: [
-      "portfolio.projects.nova.architecture.audit",
-      "portfolio.projects.nova.architecture.audit",
+      "portfolio.projects.nova.architecture.realtime",
+      "portfolio.projects.nova.architecture.roles",
       "portfolio.projects.nova.architecture.audit",
     ],
     businessResults: [
-      "portfolio.projects.nova.results.reporting",
-      "portfolio.projects.nova.results.reporting",
+      "portfolio.projects.nova.results.visibility",
+      "portfolio.projects.nova.results.response",
       "portfolio.projects.nova.results.reporting",
     ],
     metrics: [
@@ -187,18 +187,18 @@ export const portfolioProjectsData = [
     challenge: "portfolio.projects.marketlane.challenge",
     solution: "portfolio.projects.marketlane.solution",
     implementation: [
-      "portfolio.projects.marketlane.implementation.release",
-      "portfolio.projects.marketlane.implementation.release",
+      "portfolio.projects.marketlane.implementation.discovery",
+      "portfolio.projects.marketlane.implementation.platform",
       "portfolio.projects.marketlane.implementation.release",
     ],
     architectureHighlights: [
-      "portfolio.projects.marketlane.architecture.audit",
-      "portfolio.projects.marketlane.architecture.audit",
+      "portfolio.projects.marketlane.architecture.realtime",
+      "portfolio.projects.marketlane.architecture.roles",
       "portfolio.projects.marketlane.architecture.audit",
     ],
     businessResults: [
-      "portfolio.projects.marketlane.results.reporting",
-      "portfolio.projects.marketlane.results.reporting",
+      "portfolio.projects.marketlane.results.visibility",
+      "portfolio.projects.marketlane.results.response",
       "portfolio.projects.marketlane.results.reporting",
     ],
     metrics: [
@@ -248,18 +248,18 @@ export const portfolioProjectsData = [
     challenge: "portfolio.projects.fleetpulse.challenge",
     solution: "portfolio.projects.fleetpulse.solution",
     implementation: [
-      "portfolio.projects.fleetpulse.implementation.release",
-      "portfolio.projects.fleetpulse.implementation.release",
+      "portfolio.projects.fleetpulse.implementation.discovery",
+      "portfolio.projects.fleetpulse.implementation.platform",
       "portfolio.projects.fleetpulse.implementation.release",
     ],
     architectureHighlights: [
-      "portfolio.projects.fleetpulse.architecture.audit",
-      "portfolio.projects.fleetpulse.architecture.audit",
+      "portfolio.projects.fleetpulse.architecture.realtime",
+      "portfolio.projects.fleetpulse.architecture.roles",
       "portfolio.projects.fleetpulse.architecture.audit",
     ],
     businessResults: [
-      "portfolio.projects.fleetpulse.results.reporting",
-      "portfolio.projects.fleetpulse.results.reporting",
+      "portfolio.projects.fleetpulse.results.visibility",
+      "portfolio.projects.fleetpulse.results.response",
       "portfolio.projects.fleetpulse.results.reporting",
     ],
     metrics: [
@@ -309,18 +309,18 @@ export const portfolioProjectsData = [
     challenge: "portfolio.projects.learnsphere.challenge",
     solution: "portfolio.projects.learnsphere.solution",
     implementation: [
-      "portfolio.projects.learnsphere.implementation.release",
-      "portfolio.projects.learnsphere.implementation.release",
+      "portfolio.projects.learnsphere.implementation.discovery",
+      "portfolio.projects.learnsphere.implementation.platform",
       "portfolio.projects.learnsphere.implementation.release",
     ],
     architectureHighlights: [
-      "portfolio.projects.learnsphere.architecture.audit",
-      "portfolio.projects.learnsphere.architecture.audit",
+      "portfolio.projects.learnsphere.architecture.realtime",
+      "portfolio.projects.learnsphere.architecture.roles",
       "portfolio.projects.learnsphere.architecture.audit",
     ],
     businessResults: [
-      "portfolio.projects.learnsphere.results.reporting",
-      "portfolio.projects.learnsphere.results.reporting",
+      "portfolio.projects.learnsphere.results.visibility",
+      "portfolio.projects.learnsphere.results.response",
       "portfolio.projects.learnsphere.results.reporting",
     ],
     metrics: [
@@ -370,18 +370,18 @@ export const portfolioProjectsData = [
     challenge: "portfolio.projects.estateos.challenge",
     solution: "portfolio.projects.estateos.solution",
     implementation: [
-      "portfolio.projects.estateos.implementation.release",
-      "portfolio.projects.estateos.implementation.release",
+      "portfolio.projects.estateos.implementation.discovery",
+      "portfolio.projects.estateos.implementation.platform",
       "portfolio.projects.estateos.implementation.release",
     ],
     architectureHighlights: [
-      "portfolio.projects.estateos.architecture.audit",
-      "portfolio.projects.estateos.architecture.audit",
+      "portfolio.projects.estateos.architecture.realtime",
+      "portfolio.projects.estateos.architecture.roles",
       "portfolio.projects.estateos.architecture.audit",
     ],
     businessResults: [
-      "portfolio.projects.estateos.results.reporting",
-      "portfolio.projects.estateos.results.reporting",
+      "portfolio.projects.estateos.results.visibility",
+      "portfolio.projects.estateos.results.response",
       "portfolio.projects.estateos.results.reporting",
     ],
     metrics: [
@@ -431,18 +431,18 @@ export const portfolioProjectsData = [
     challenge: "portfolio.projects.factorygrid.challenge",
     solution: "portfolio.projects.factorygrid.solution",
     implementation: [
-      "portfolio.projects.factorygrid.implementation.release",
-      "portfolio.projects.factorygrid.implementation.release",
+      "portfolio.projects.factorygrid.implementation.discovery",
+      "portfolio.projects.factorygrid.implementation.platform",
       "portfolio.projects.factorygrid.implementation.release",
     ],
     architectureHighlights: [
-      "portfolio.projects.factorygrid.architecture.audit",
-      "portfolio.projects.factorygrid.architecture.audit",
+      "portfolio.projects.factorygrid.architecture.realtime",
+      "portfolio.projects.factorygrid.architecture.roles",
       "portfolio.projects.factorygrid.architecture.audit",
     ],
     businessResults: [
-      "portfolio.projects.factorygrid.results.reporting",
-      "portfolio.projects.factorygrid.results.reporting",
+      "portfolio.projects.factorygrid.results.visibility",
+      "portfolio.projects.factorygrid.results.response",
       "portfolio.projects.factorygrid.results.reporting",
     ],
     metrics: [
@@ -492,18 +492,18 @@ export const portfolioProjectsData = [
     challenge: "portfolio.projects.quickbite.challenge",
     solution: "portfolio.projects.quickbite.solution",
     implementation: [
-      "portfolio.projects.quickbite.implementation.release",
-      "portfolio.projects.quickbite.implementation.release",
+      "portfolio.projects.quickbite.implementation.discovery",
+      "portfolio.projects.quickbite.implementation.platform",
       "portfolio.projects.quickbite.implementation.release",
     ],
     architectureHighlights: [
-      "portfolio.projects.quickbite.architecture.audit",
-      "portfolio.projects.quickbite.architecture.audit",
+      "portfolio.projects.quickbite.architecture.realtime",
+      "portfolio.projects.quickbite.architecture.roles",
       "portfolio.projects.quickbite.architecture.audit",
     ],
     businessResults: [
-      "portfolio.projects.quickbite.results.reporting",
-      "portfolio.projects.quickbite.results.reporting",
+      "portfolio.projects.quickbite.results.visibility",
+      "portfolio.projects.quickbite.results.response",
       "portfolio.projects.quickbite.results.reporting",
     ],
     metrics: [

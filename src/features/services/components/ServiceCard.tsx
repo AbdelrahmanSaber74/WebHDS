@@ -1,4 +1,4 @@
-﻿import { Box, Heading, HStack, Icon, LinkBox, LinkOverlay, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, HStack, Icon, LinkBox, LinkOverlay, Stack, Text } from "@chakra-ui/react";
 import { ArrowRight } from "lucide-react";
 import { SERVICES_BASE_PATH } from "@/features/services/constants";
 import type { Service } from "@/features/services/types";
@@ -19,7 +19,18 @@ export function ServiceCard({ service }: ServiceCardProps) {
         h="full"
         role="group"
         transition="transform var(--hds-transition-normal), box-shadow var(--hds-transition-normal), border-color var(--hds-transition-normal)"
-        _hover={{ borderColor: "brand.primary", boxShadow: "lift", transform: "translateY(-5px)" }}
+        _hover={{
+          borderColor: "brand.primary",
+          boxShadow: "lift",
+          transform: "translateY(-5px)",
+          _after: {
+            content: '""',
+            position: "absolute",
+            insetInline: 0,
+            bottom: "-7px",
+            height: "7px",
+          },
+        }}
       >
         <Stack gap="5" h="full">
           <Box

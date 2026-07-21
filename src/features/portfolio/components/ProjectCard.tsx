@@ -1,4 +1,4 @@
-﻿import { Box, Heading, HStack, Image, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, HStack, Image, Link, Stack, Text } from "@chakra-ui/react";
 import { ArrowRight } from "lucide-react";
 import { Card, Badge } from "@/shared/ui";
 import { useI18n } from "@/shared/i18n";
@@ -22,7 +22,18 @@ export function ProjectCard({ priority = false, project }: ProjectCardProps) {
       role="group"
       transition="transform var(--hds-transition-normal), box-shadow var(--hds-transition-normal), border-color var(--hds-transition-normal)"
       variant={project.featured ? "feature" : "glass"}
-      _hover={{ borderColor: "brand.primary", boxShadow: "ambient", transform: "translateY(-6px)" }}
+      _hover={{
+        borderColor: "brand.primary",
+        boxShadow: "ambient",
+        transform: "translateY(-6px)",
+        _after: {
+          content: '""',
+          position: "absolute",
+          insetInline: 0,
+          bottom: "-8px",
+          height: "8px",
+        },
+      }}
     >
       <Box overflow="hidden" position="relative">
         <Image
