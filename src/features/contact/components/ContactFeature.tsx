@@ -1,4 +1,4 @@
-﻿import { Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useCompany, useCompanyContact, useOffices } from "@/features/company";
 import { useSeo, useStructuredData } from "@/shared/hooks";
 import { useI18n } from "@/shared/i18n";
@@ -9,7 +9,6 @@ import {
   ContactFaqSection,
   ContactFormSection,
   ContactHeroSection,
-  ContactMapSection,
   ContactMethodsSection,
   ContactOfficesSection,
 } from "@/features/contact/sections";
@@ -37,7 +36,6 @@ export function ContactFeature() {
       <ContactHeroSection data={content.hero} />
       <ContactMethodsSection contact={contact} data={content.methods} />
       <ContactOfficesSection data={content.offices} offices={offices} />
-      <ContactMapSection data={content.map} offices={offices} />
       <ContactFormSection data={content.form} />
       <ContactFaqSection data={content.faq} />
       <ContactCtaSection data={content.cta} />
